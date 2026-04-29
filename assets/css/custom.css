@@ -1,0 +1,43 @@
+/*
+ * custom.css
+ * ─────────────────────────────────────────────────────────────
+ * Write your plain CSS here — no build step required.
+ * This file is loaded AFTER Tailwind output so your rules
+ * will always win without needing !important.
+ *
+ * Good use-cases:
+ *   • Third-party library overrides (Swiper, etc.)
+ *   • CSS animations / keyframes
+ *   • Complex selectors Tailwind can't easily express
+ *   • Client brand tweaks that don't belong in input.css
+ * ─────────────────────────────────────────────────────────────
+ */
+
+
+/* ─── Example: Swiper custom skin ───────────────────────────── */
+/*
+.swiper-pagination-bullet-active {
+  background-color: #2563eb;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2563eb;
+}
+*/
+
+
+/* ─── Example: Custom keyframe animation ─────────────────────── */
+/*
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+*/
+
+
+/* ─── Your styles below ─────────────────────────────────────── */
