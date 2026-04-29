@@ -1,0 +1,22 @@
+{
+  // Disable VS Code's built-in CSS linter — it doesn't understand
+  // Tailwind directives (@theme, @apply, @layer, etc.).
+  // The Tailwind IntelliSense extension handles validation instead.
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+
+  // Tell Tailwind IntelliSense where to find class usage
+  "tailwindCSS.experimental.classRegex": [],
+
+  // Associate .css files with Tailwind so IntelliSense fires
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  // Recommended: install the Tailwind CSS IntelliSense extension
+  // Extension ID: bradlc.vscode-tailwindcss
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
+}
