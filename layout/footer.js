@@ -156,14 +156,21 @@ document.querySelector("footer").innerHTML = `
         <div class="hidden my-0 md:my-6  lg:block w-full border-t border-[#99cfff] opacity-60"></div>
 
         <!-- Upload print file button -->
-        <div class="flex justify-center lg:justify-start">
+        <style>
+          @keyframes upload-line-sweep {
+            0%   { left: -120%; }
+            100% { left: 120%; }
+          }
+        </style>
+        <div class="flex justify-start">
           <button type="button"
-                  class="relative overflow-hidden border border-[#99cfff] rounded-full px-3 py-2 flex items-center gap-2 hover:opacity-90 transition-opacity"
+                  class="group relative overflow-hidden border border-[#99cfff] rounded-full px-3 py-2 flex items-center gap-2 hover:opacity-90 transition-opacity"
                   style="background: linear-gradient(112.917deg, #e5f3ff 3.62%, #ffffff 109.39%);">
-            <span class="w-5 h-5 flex items-center justify-center flex-shrink-0">
+            <span aria-hidden="true" class="pointer-events-none absolute top-0 h-full w-0.5 -skew-x-12 bg-[#99cfff]" style="animation: upload-line-sweep 2.5s ease-in-out infinite alternate;"></span>
+            <span class="relative w-5 h-5 flex items-center justify-center shrink-0">
               <img src="assets/images/icons/upload-cloud.svg" alt="" class="w-full h-full" />
             </span>
-            <span class="text-[16px] font-medium text-[#005299] leading-[22.72px] whitespace-nowrap">Upload Print file</span>
+            <span class="relative text-[16px] font-medium text-[#005299] leading-[22.72px] whitespace-nowrap">Upload Print file</span>
           </button>
         </div>
 
