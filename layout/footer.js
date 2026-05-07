@@ -66,7 +66,7 @@ document.querySelector("footer").innerHTML = `
 
     <!-- ── Row 2: Nav columns + Contact ── -->
     <div class="flex flex-col items-center gap-8
-                lg:flex-row lg:items-start lg:justify-between">
+                lg:flex-row lg:justify-between">
 
       <!-- Nav columns wrapper -->
       <div class="flex flex-col gap-8 sm:flex-row sm:gap-16 lg:gap-20 flex-shrink-0 text-center lg:text-left">
@@ -128,7 +128,7 @@ document.querySelector("footer").innerHTML = `
         <div class="flex flex-col items-center lg:items-start not-italic">
           <p class="text-[16px] text-[#1e293b] leading-[22.72px] font-medium w-[125px] text-center lg:text-left">Call us toll free</p>
           <a href="tel:1300377377"
-             class="text-[24px] font-bold text-[#005299] leading-[31.68px] tracking-[-0.48px] whitespace-nowrap hover:underline">
+             class="text-[24px] font-bold text-[#005299] leading-[31.68px] tracking-[-0.48px] whitespace-nowrap ">
             1300 377 377
           </a>
         </div>
@@ -153,7 +153,7 @@ document.querySelector("footer").innerHTML = `
         </div>
 
         <!-- Decorative divider line (hidden on mobile) -->
-        <div class="hidden lg:block w-full border-t border-[#e2e8f0] opacity-60"></div>
+        <div class="hidden my-0 md:my-6  lg:block w-full border-t border-[#99cfff] opacity-60"></div>
 
         <!-- Upload print file button -->
         <div class="flex justify-center lg:justify-start">
