@@ -227,7 +227,7 @@ document.querySelector("header").innerHTML = `
       <span class="absolute h-[1.5px] w-[18px] -rotate-45 bg-[#334155]"></span>
     </button>
 
-    <div class="w-full max-w-[375px] rounded-t-[24px] border border-[#f1f5f9] bg-white px-4 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] max-[374px]:max-w-full">
+    <div class="w-full  rounded-t-[24px] border border-[#f1f5f9] bg-white px-4 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] max-[374px]:max-w-full">
       <div class="max-h-[min(567px,calc(100dvh-130px))] overflow-y-auto overflow-x-hidden pr-1">
         <div class="flex flex-col gap-4">
           <a href="#" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
