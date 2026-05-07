@@ -73,7 +73,7 @@ document.querySelector("footer").innerHTML = `
 
         <!-- Quick Links -->
         <div class="flex flex-col gap-3">
-          <p class="px-3 text-[18px] font-semibold text-[#1e293b] leading-[25.56px]">Quick Links</p>
+          <p class="font-heading px-3 text-[18px] font-semibold text-[#1e293b] leading-[25.56px]">Quick Links</p>
           <ul class="flex flex-col">
             <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Home</span><span aria-hidden="true">Home</span></span></a></li>
             <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>About Us</span><span aria-hidden="true">About Us</span></span></a></li>
@@ -86,7 +86,7 @@ document.querySelector("footer").innerHTML = `
 
         <!-- Service Category -->
         <div class="flex flex-col gap-3">
-          <p class="px-3 text-[18px] font-semibold text-[#1e293b] leading-[25.56px]">Service Category</p>
+          <p class="font-heading px-3 text-[18px] font-semibold text-[#1e293b] leading-[25.56px]">Service Category</p>
 
           <!-- Mobile: single stacked list | Desktop: 2 columns side by side -->
           <div class="flex gap-4 lg:gap-8">
