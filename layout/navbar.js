@@ -63,7 +63,7 @@ document.querySelector("header").innerHTML = `
       <nav class="flex min-w-0 flex-1 items-center justify-center gap-1 xl:gap-3" aria-label="Primary">
         <a href="index.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Home</a>
         <a href="about.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">About Us</a>
-        <a href="#" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Case Studies</a>
+        <a href="case-studies.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Case Studies</a>
         <a href="#" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Blogs</a>
         <a href="#" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">FAQ</a>
         <a href="contact.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Contact Us</a>
@@ -196,7 +196,7 @@ document.querySelector("header").innerHTML = `
     <nav class="flex flex-col gap-3" aria-label="Mobile primary">
       <a href="index.html" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">Home</a>
       <a href="about.html" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">About Us</a>
-      <a href="#" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">Case Studies</a>
+      <a href="case-studies.html" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">Case Studies</a>
       <a href="#" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">Blogs</a>
       <a href="#" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">FAQ</a>
       <a href="contact.html" class="min-h-11 px-3 py-2 text-[18px] leading-[25.56px] text-[#1e293b]">Contact Us</a>
