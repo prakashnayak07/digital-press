@@ -472,6 +472,9 @@
   .h-\[450px\] {
     height: 450px;
   }
+  .h-\[452px\] {
+    height: 452px;
+  }
   .h-full {
     height: 100%;
   }
@@ -2043,6 +2046,11 @@
       display: none;
     }
   }
+  .lg\:aspect-\[1024\/602\] {
+    @media (width >= 64rem) {
+      aspect-ratio: 1024/602;
+    }
+  }
   .lg\:aspect-\[1920\/440\] {
     @media (width >= 64rem) {
       aspect-ratio: 1920/440;
@@ -2071,6 +2079,11 @@
   .lg\:h-\[630px\] {
     @media (width >= 64rem) {
       height: 630px;
+    }
+  }
+  .lg\:h-auto {
+    @media (width >= 64rem) {
+      height: auto;
     }
   }
   .lg\:h-full {
