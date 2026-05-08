@@ -86,6 +86,10 @@
 .dp-similar-swiper { width: 100%; min-width: 0; overflow: hidden; }
 .dp-similar-swiper .swiper-slide { height: auto; }
 
+/* ─── Contact tabs ────────────────────────────────────────── */
+.js-contact-tab { color: #0f172a; background: transparent; border: 1px solid transparent; transition: background-color 200ms, color 200ms, border-color 200ms; }
+.js-contact-tab.is-active { background: #e5f3ff; border-color: #cce7ff; color: #005299; }
+
 /* ─── FAQ accordion ───────────────────────────────────────── */
 .js-faq-panel { max-height: 0; transition: max-height 400ms ease; }
 .js-faq-item.is-open .js-faq-panel { max-height: 500px; }

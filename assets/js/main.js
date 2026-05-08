@@ -157,6 +157,28 @@
       });
     }
 
+    // ── Contact form tabs: SEND PRINTABLE FILE ↔ MAKE AN ENQUIRY.
+    document.querySelectorAll(".js-contact-tabs").forEach((group) => {
+      const tabs = group.querySelectorAll(".js-contact-tab");
+      const form = group.parentElement?.querySelector("form");
+      const upload = form?.querySelector(".js-contact-upload");
+      const submit = form?.querySelector(".js-contact-submit");
+
+      const setActive = (name) => {
+        tabs.forEach((t) => {
+          const active = t.dataset.tab === name;
+          t.classList.toggle("is-active", active);
+          t.setAttribute("aria-selected", String(active));
+        });
+        if (upload) upload.style.display = name === "file" ? "" : "none";
+        if (submit) submit.textContent = name === "file" ? "Submit File" : "Send Enquiry";
+      };
+
+      tabs.forEach((t) => {
+        t.addEventListener("click", () => setActive(t.dataset.tab));
+      });
+    });
+
     // ── FAQ accordions: first item open by default; clicking any other item
     // opens it WITHOUT closing the others (per spec).
     document.querySelectorAll(".js-faq-item").forEach((item) => {
