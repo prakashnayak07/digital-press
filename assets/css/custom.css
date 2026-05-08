@@ -80,6 +80,12 @@
 .js-year-item.is-open .js-year-panel { max-height: 500px; margin-top: 12px; }
 .js-year-item.is-open .js-year-chevron { transform: rotate(180deg); }
 
+/* ─── Similar Case Studies swiper ─────────────────────────── */
+/* min-width:0 stops the flex parent from letting Swiper's wrapper
+   grow past the container (which causes a runaway resize loop). */
+.dp-similar-swiper { width: 100%; min-width: 0; overflow: hidden; }
+.dp-similar-swiper .swiper-slide { height: auto; }
+
 /* ─── FAQ accordion ───────────────────────────────────────── */
 .js-faq-panel { max-height: 0; transition: max-height 400ms ease; }
 .js-faq-item.is-open .js-faq-panel { max-height: 500px; }

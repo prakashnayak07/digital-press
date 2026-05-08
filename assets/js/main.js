@@ -140,6 +140,23 @@
       });
     });
 
+    // ── Similar Case Studies swiper: 1.2 → 2.2 → 3.5 slides per view (desktop = 3.5).
+    if (typeof Swiper !== "undefined") {
+      document.querySelectorAll(".dp-similar-swiper").forEach((el) => {
+        new Swiper(el, {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          grabCursor: true,
+          observer: true,
+          observeParents: true,
+          breakpoints: {
+            640: { slidesPerView: 2.2, spaceBetween: 20 },
+            1024: { slidesPerView: 3.5, spaceBetween: 32 },
+          },
+        });
+      });
+    }
+
     // ── FAQ accordions: first item open by default; clicking any other item
     // opens it WITHOUT closing the others (per spec).
     document.querySelectorAll(".js-faq-item").forEach((item) => {
