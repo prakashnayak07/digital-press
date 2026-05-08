@@ -157,6 +157,25 @@
       });
     }
 
+    // ── Recent Blogs swiper with right-screen bleed.
+    // Section clips at viewport edge (.dp-bleed-section { overflow:hidden }),
+    // swiper itself is overflow:visible so slides bleed past on the right.
+    if (typeof Swiper !== "undefined") {
+      document.querySelectorAll(".dp-bleed-swiper").forEach((el) => {
+        new Swiper(el, {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          grabCursor: true,
+          observer: true,
+          observeParents: true,
+          breakpoints: {
+            640: { slidesPerView: 2.2, spaceBetween: 20 },
+            1024: { slidesPerView: 3.2, spaceBetween: 32 },
+          },
+        });
+      });
+    }
+
     // ── Contact form tabs: SEND PRINTABLE FILE ↔ MAKE AN ENQUIRY.
     document.querySelectorAll(".js-contact-tabs").forEach((group) => {
       const tabs = group.querySelectorAll(".js-contact-tab");
