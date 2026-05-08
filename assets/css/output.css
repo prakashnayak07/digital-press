@@ -808,8 +808,14 @@
   .bg-\[\#334155\] {
     background-color: #334155;
   }
+  .bg-\[\#b9e3fe\] {
+    background-color: #b9e3fe;
+  }
   .bg-\[\#cbd5e1\] {
     background-color: #cbd5e1;
+  }
+  .bg-\[\#dff0a6\] {
+    background-color: #dff0a6;
   }
   .bg-\[\#e2e8f0\] {
     background-color: #e2e8f0;
@@ -822,6 +828,9 @@
   }
   .bg-\[\#f8fafc\] {
     background-color: #f8fafc;
+  }
+  .bg-\[\#fecdd3\] {
+    background-color: #fecdd3;
   }
   .bg-black {
     background-color: var(--color-black);
