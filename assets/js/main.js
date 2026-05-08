@@ -103,5 +103,55 @@
 
       setViewAllMenu(false);
     });
+
+    // ── Marquees: clone track contents so the -50% translate loop seams cleanly,
+    // and apply a duration derived from data-marquee-speed (px/sec).
+    document.querySelectorAll(".js-marquee").forEach((wrap) => {
+      const track = wrap.querySelector(".js-marquee-track");
+      if (!track) return;
+
+      const original = Array.from(track.children);
+      original.forEach((node) => {
+        const clone = node.cloneNode(true);
+        clone.setAttribute("aria-hidden", "true");
+        track.appendChild(clone);
+      });
+
+      const setDuration = () => {
+        const speed = Number(wrap.dataset.marqueeSpeed) || 50;
+        const distance = track.scrollWidth / 2;
+        const duration = Math.max(distance / speed, 10);
+        track.style.setProperty("--dp-marquee-duration", `${duration}s`);
+      };
+      setDuration();
+      window.addEventListener("resize", setDuration);
+    });
+
+    // ── Year accordions: independent toggle, multiple can be open at once.
+    document.querySelectorAll(".js-year-item").forEach((item) => {
+      const toggle = item.querySelector(".js-year-toggle");
+      if (!toggle) return;
+      if (toggle.getAttribute("aria-expanded") === "true") item.classList.add("is-open");
+
+      toggle.addEventListener("click", () => {
+        const next = !item.classList.contains("is-open");
+        item.classList.toggle("is-open", next);
+        toggle.setAttribute("aria-expanded", String(next));
+      });
+    });
+
+    // ── FAQ accordions: first item open by default; clicking any other item
+    // opens it WITHOUT closing the others (per spec).
+    document.querySelectorAll(".js-faq-item").forEach((item) => {
+      const toggle = item.querySelector(".js-faq-toggle");
+      if (!toggle) return;
+      if (item.dataset.open === "true") item.classList.add("is-open");
+
+      toggle.addEventListener("click", () => {
+        const next = !item.classList.contains("is-open");
+        item.classList.toggle("is-open", next);
+        toggle.setAttribute("aria-expanded", String(next));
+      });
+    });
   });
 })();
