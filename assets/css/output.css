@@ -1860,6 +1860,11 @@
       margin-block: calc(var(--spacing) * 6);
     }
   }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:inline-flex {
     @media (width >= 48rem) {
       display: inline-flex;
