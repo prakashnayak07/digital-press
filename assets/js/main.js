@@ -193,14 +193,13 @@
     // ── Why-Us features carousel (with prev/next round buttons).
     if (typeof Swiper !== "undefined") {
       document.querySelectorAll(".dp-why-swiper").forEach((el) => {
-        const wrap = el.parentElement?.parentElement;
         new Swiper(el, {
           slidesPerView: 1.2,
           spaceBetween: 16,
           grabCursor: true,
           navigation: {
-            nextEl: wrap?.querySelector(".js-why-next") || null,
-            prevEl: wrap?.querySelector(".js-why-prev") || null,
+            nextEl: ".js-why-next",
+            prevEl: ".js-why-prev",
           },
           breakpoints: {
             640: { slidesPerView: 2.2, spaceBetween: 20 },
