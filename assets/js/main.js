@@ -157,6 +157,60 @@
       });
     }
 
+    // ── Hero slider with pagination dots (auto-plays).
+    if (typeof Swiper !== "undefined") {
+      document.querySelectorAll(".dp-hero-swiper").forEach((el) => {
+        const pag = el.querySelector(".swiper-pagination");
+        new Swiper(el, {
+          slidesPerView: 1,
+          loop: true,
+          autoplay: { delay: 5000, disableOnInteraction: false },
+          pagination: pag ? { el: pag, clickable: true } : false,
+        });
+      });
+    }
+
+    // ── Insights row carousel (with prev/next round buttons).
+    if (typeof Swiper !== "undefined") {
+      document.querySelectorAll(".dp-insights-swiper").forEach((el) => {
+        const wrap = el.parentElement;
+        new Swiper(el, {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+          grabCursor: true,
+          navigation: {
+            nextEl: wrap?.querySelector(".js-insights-next") || null,
+            prevEl: wrap?.querySelector(".js-insights-prev") || null,
+          },
+          breakpoints: {
+            640: { slidesPerView: 2.2, spaceBetween: 20 },
+            1024: { slidesPerView: 3.2, spaceBetween: 32 },
+          },
+        });
+      });
+    }
+
+    // ── Why-Us features carousel (with prev/next round buttons).
+    if (typeof Swiper !== "undefined") {
+      document.querySelectorAll(".dp-why-swiper").forEach((el) => {
+        const wrap = el.parentElement?.parentElement;
+        new Swiper(el, {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          grabCursor: true,
+          navigation: {
+            nextEl: wrap?.querySelector(".js-why-next") || null,
+            prevEl: wrap?.querySelector(".js-why-prev") || null,
+          },
+          breakpoints: {
+            640: { slidesPerView: 2.2, spaceBetween: 20 },
+            1024: { slidesPerView: 3.2, spaceBetween: 24 },
+            1280: { slidesPerView: 4.2, spaceBetween: 32 },
+          },
+        });
+      });
+    }
+
     // ── Recent Blogs swiper with right-screen bleed.
     // Section clips at viewport edge (.dp-bleed-section { overflow:hidden }),
     // swiper itself is overflow:visible so slides bleed past on the right.

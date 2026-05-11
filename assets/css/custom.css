@@ -86,12 +86,24 @@
 .dp-similar-swiper { width: 100%; min-width: 0; overflow: hidden; }
 .dp-similar-swiper .swiper-slide { height: auto; }
 
-/* ─── Right-bleed swiper (Recent Blogs) ───────────────────── */
+/* ─── Hero swiper pagination dots ─────────────────────────── */
+.dp-hero-swiper .swiper-pagination { position: static; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 16px; }
+.dp-hero-swiper .swiper-pagination-bullet { width: 12px; height: 12px; background: #cce7ff; opacity: 1; border-radius: 999px; transition: width 200ms; }
+.dp-hero-swiper .swiper-pagination-bullet-active { width: 28px; background: #006dcc; }
+
+/* ─── Insights/Why navigation arrows ──────────────────────── */
+.dp-nav-btn { display: inline-flex; align-items: center; justify-content: center; height: 42px; width: 42px; border-radius: 999px; background: #fff; border: 1px solid #005aa9; transition: background-color 200ms; }
+.dp-nav-btn:hover { background: #e5f3ff; }
+.dp-nav-btn.swiper-button-disabled { opacity: 0.4; pointer-events: none; }
+
+/* ─── Right-bleed swiper (Why-Us & Recent Blogs) ──────────── */
 /* The swiper itself is overflow:visible so slides bleed past the
    container; the parent section clips at the viewport's right edge. */
 .dp-bleed-section { overflow: hidden; }
 .dp-bleed-swiper { width: 100%; min-width: 0; overflow: visible; }
 .dp-bleed-swiper .swiper-slide { height: auto; }
+.dp-why-swiper { width: 100%; min-width: 0; overflow: visible; }
+.dp-why-swiper .swiper-slide { height: auto; }
 
 /* ─── Contact tabs ────────────────────────────────────────── */
 .js-contact-tab { color: #0f172a; background: transparent; border: 1px solid transparent; transition: background-color 200ms, color 200ms, border-color 200ms; }
