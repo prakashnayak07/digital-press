@@ -869,6 +869,9 @@
   .w-max {
     width: max-content;
   }
+  .max-w-176 {
+    max-width: calc(var(--spacing) * 176);
+  }
   .max-w-176\.5 {
     max-width: calc(var(--spacing) * 176.5);
   }
@@ -3179,6 +3182,11 @@
   .lg\:py-\[42px\] {
     @media (width >= 64rem) {
       padding-block: 42px;
+    }
+  }
+  .lg\:py-\[60px\] {
+    @media (width >= 64rem) {
+      padding-block: 60px;
     }
   }
   .lg\:py-\[67px\] {

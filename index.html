@@ -52,7 +52,7 @@
       </div>
     </section>
     <!-- ─── 2. Why-Us features carousel ─────────────────────────── -->
-    <section class="overflow-hidden bg-white py-16 sm:py-20 lg:py-[120px]">
+    <section class="overflow-hidden bg-white py-16 sm:py-20 lg:py-[60px]">
       <div class="mx-auto flex max-w-[1400px] flex-col gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8 2xl:px-0">
         <div class="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
           <div class="flex flex-col gap-3 lg:max-w-[820px]">
@@ -611,8 +611,77 @@
         </div>
       </div>
     </section>
+    <!-- ─── 7. Contact / Enquiry form ──────────────────────────── -->
+    <section class="bg-white py-16 sm:py-20 lg:py-[60px]">
+      <div
+        class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-start lg:gap-12 lg:px-8 2xl:px-0">
 
-    <!-- ─── 7. Awards marquee ───────────────────────────────────── -->
+        <div class="flex w-full flex-col gap-6 lg:max-w-[720px]">
+          <div class="flex flex-col gap-3">
+            <h2
+              class="font-heading text-[28px] font-bold leading-[1.15] tracking-[-0.56px] text-[#1e293b] sm:text-[36px] lg:text-[44px] lg:leading-[58.08px] lg:tracking-[-0.88px]">
+              Let's talk about your <span class="text-[#005299]">print project</span>
+            </h2>
+            <p class="text-[16px] leading-[25.56px] text-[#334155] sm:text-[18px]">
+              Share a few details about your requirements and our production team will guide you through the best
+              approach—ensuring quality, accuracy, and reliable turnaround from the start.
+            </p>
+          </div>
+
+          <div class="js-contact-tabs flex w-full gap-3 rounded-full border border-[#e2e8f0] bg-[#f8fafc] p-1">
+            <button type="button" data-tab="file"
+              class="js-contact-tab is-active flex-1 rounded-full px-4 py-3 text-[14px] font-medium leading-[22.72px] sm:text-[16px]"
+              aria-selected="true">SEND PRINTABLE FILE</button>
+            <button type="button" data-tab="enquiry"
+              class="js-contact-tab flex-1 rounded-full px-4 py-3 text-[14px] font-medium leading-[22.72px] sm:text-[16px]"
+              aria-selected="false">MAKE AN ENQUIRY</button>
+          </div>
+
+          <form class="flex flex-col gap-6" novalidate>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
+              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">First
+                Name<input type="text" name="firstName" placeholder="Enter First Name"
+                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
+              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Last
+                Name<input type="text" name="lastName" placeholder="Enter Last Name"
+                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
+              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Phone<input
+                  type="tel" name="phone" placeholder="Enter you phone number"
+                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
+              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Email<input
+                  type="email" name="email" placeholder="Enter you email addess"
+                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
+            </div>
+
+            <div class="js-contact-upload flex flex-col gap-2">
+              <span class="text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Upload a File</span>
+              <label
+                class="flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-[#e2e8f0] bg-[#f8fafc] p-4 text-center hover:border-[#005299]">
+                <img src="assets/images/contact/4125edcc1f5f6a00965d4dbe53beef674e436fef.svg" alt="" class="h-6 w-6" />
+                <span class="text-[16px] font-medium leading-[22.72px] text-[#64748b]">Drag &amp; drop or click to
+                  upload</span>
+                <span class="text-[14px] leading-[19.88px] text-[#64748b]">Supported : pdf, docx</span>
+                <input type="file" name="file" accept=".pdf,.docx" class="sr-only" />
+              </label>
+            </div>
+
+            <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Write Your
+              Message<textarea name="message" rows="3" placeholder="Enter"
+                class="border-b border-[#e2e8f0] bg-transparent p-2 pb-10 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none"></textarea></label>
+
+            <button type="submit"
+              class="js-contact-submit inline-flex min-h-11 w-[180px] items-center justify-center gap-1.5 rounded-full bg-[#005299] px-4 py-3 text-[16px] font-medium leading-[25.56px] text-white transition-colors hover:bg-[#004987] sm:text-[18px]">Submit
+              File</button>
+          </form>
+        </div>
+
+        <div class="hidden lg:block lg:flex-1">
+          <img src="assets/images/home/ffc41ff8862584a9805815ffaeebb0fd672bfad7.png" alt=""
+            class="h-full w-full rounded-[24px] object-cover" />
+        </div>
+      </div>
+    </section>
+    <!-- ─── 8. Awards marquee ───────────────────────────────────── -->
     <section class="bg-white py-12 sm:py-16 lg:py-20">
       <div class="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 2xl:px-0">
         <div class="flex overflow-hidden  border border-[#005aa9]">
@@ -641,8 +710,8 @@
       </div>
     </section>
 
-    <!-- ─── 8. Insights & Inspiration carousel ──────────────────── -->
-    <section class="overflow-hidden bg-white py-16 sm:py-20 lg:py-[120px]">
+    <!-- ─── 9. Insights & Inspiration carousel ──────────────────── -->
+    <section class="overflow-hidden bg-white py-16 sm:py-20 lg:py-[60px]">
       <div class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 sm:px-6 lg:gap-10.5 lg:px-8 2xl:px-0">
         <div class="flex items-end gap-3">
           <div class="flex flex-1 flex-col items-center gap-1 text-center">
@@ -723,8 +792,8 @@
                       Launch of New Recyclable Merchandise Line</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Introducing our
                       latest line of merchandise made entirely from recyclable materials.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Shop Now <span
-                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Shop
+                      Now <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
                           <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
@@ -744,8 +813,8 @@
                       Partnership with Local Farmers for Sustainable Sourcing</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">In our
                       commitment to sustainability we're partnering with local farmers.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Discover More <span
-                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Discover
+                      More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
                           <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
@@ -765,8 +834,8 @@
                       Tech Innovations in E-Commerce</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Join us for an
                       insightful webinar on the latest e-commerce innovations.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read More <span
-                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
                           <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
@@ -786,8 +855,8 @@
                       Company Hosts Annual Charity Gala</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Our company is
                       proud to host the annual charity gala this year.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read More <span
-                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
                           <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
@@ -807,8 +876,8 @@
                       New Eco-Friendly Packaging Solutions Launched</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Reducing our
                       carbon footprint with eco-friendly packaging.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read More <span
-                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
                           <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
@@ -851,8 +920,8 @@
 
 
 
-    <!-- ─── 9. FAQ ──────────────────────────────────────────────── -->
-    <section class="bg-white py-16 sm:py-20 lg:py-[120px]">
+    <!-- ─── 10. FAQ ──────────────────────────────────────────────── -->
+    <section class="bg-white py-16 sm:py-20 lg:py-[60px]">
       <div class="mx-auto flex max-w-[1400px] flex-col gap-8 px-4 sm:px-6 lg:gap-[42px] lg:px-8 2xl:px-0">
         <div class="flex flex-col items-start gap-3 lg:max-w-[820px]">
           <h2
@@ -974,76 +1043,7 @@
       </div>
     </section>
 
-    <!-- ─── 10. Contact / Enquiry form ──────────────────────────── -->
-    <section class="bg-white py-16 sm:py-20 lg:py-[120px]">
-      <div
-        class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 sm:px-6 lg:flex-row lg:items-start lg:gap-12 lg:px-8 2xl:px-0">
 
-        <div class="flex w-full flex-col gap-6 lg:max-w-[720px]">
-          <div class="flex flex-col gap-3">
-            <h2
-              class="font-heading text-[28px] font-bold leading-[1.15] tracking-[-0.56px] text-[#1e293b] sm:text-[36px] lg:text-[44px] lg:leading-[58.08px] lg:tracking-[-0.88px]">
-              Let's talk about your <span class="text-[#005299]">print project</span>
-            </h2>
-            <p class="text-[16px] leading-[25.56px] text-[#334155] sm:text-[18px]">
-              Share a few details about your requirements and our production team will guide you through the best
-              approach—ensuring quality, accuracy, and reliable turnaround from the start.
-            </p>
-          </div>
-
-          <div class="js-contact-tabs flex w-full gap-3 rounded-full border border-[#e2e8f0] bg-[#f8fafc] p-1">
-            <button type="button" data-tab="file"
-              class="js-contact-tab is-active flex-1 rounded-full px-4 py-3 text-[14px] font-medium leading-[22.72px] sm:text-[16px]"
-              aria-selected="true">SEND PRINTABLE FILE</button>
-            <button type="button" data-tab="enquiry"
-              class="js-contact-tab flex-1 rounded-full px-4 py-3 text-[14px] font-medium leading-[22.72px] sm:text-[16px]"
-              aria-selected="false">MAKE AN ENQUIRY</button>
-          </div>
-
-          <form class="flex flex-col gap-6" novalidate>
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
-              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">First
-                Name<input type="text" name="firstName" placeholder="Enter First Name"
-                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
-              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Last
-                Name<input type="text" name="lastName" placeholder="Enter Last Name"
-                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
-              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Phone<input
-                  type="tel" name="phone" placeholder="Enter you phone number"
-                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
-              <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Email<input
-                  type="email" name="email" placeholder="Enter you email addess"
-                  class="border-b border-[#e2e8f0] bg-transparent p-2 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none" /></label>
-            </div>
-
-            <div class="js-contact-upload flex flex-col gap-2">
-              <span class="text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Upload a File</span>
-              <label
-                class="flex cursor-pointer flex-col items-center justify-center gap-2 rounded-xl border border-dashed border-[#e2e8f0] bg-[#f8fafc] p-4 text-center hover:border-[#005299]">
-                <img src="assets/images/contact/4125edcc1f5f6a00965d4dbe53beef674e436fef.svg" alt="" class="h-6 w-6" />
-                <span class="text-[16px] font-medium leading-[22.72px] text-[#64748b]">Drag &amp; drop or click to
-                  upload</span>
-                <span class="text-[14px] leading-[19.88px] text-[#64748b]">Supported : pdf, docx</span>
-                <input type="file" name="file" accept=".pdf,.docx" class="sr-only" />
-              </label>
-            </div>
-
-            <label class="flex flex-col gap-2 text-[16px] font-medium leading-[22.72px] text-[#1e293b]">Write Your
-              Message<textarea name="message" rows="3" placeholder="Enter"
-                class="border-b border-[#e2e8f0] bg-transparent p-2 pb-10 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none"></textarea></label>
-
-            <button type="submit"
-              class="js-contact-submit inline-flex min-h-11 w-[180px] items-center justify-center gap-1.5 rounded-full bg-[#005299] px-4 py-3 text-[16px] font-medium leading-[25.56px] text-white transition-colors hover:bg-[#004987] sm:text-[18px]">Submit
-              File</button>
-          </form>
-        </div>
-
-        <div class="hidden lg:block lg:flex-1">
-          <img src="assets/images/home/ffc41ff8862584a9805815ffaeebb0fd672bfad7.png" alt=""
-            class="h-full w-full rounded-[24px] object-cover" />
-        </div>
-      </div>
-    </section>
 
   </main>
 
