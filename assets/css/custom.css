@@ -42,12 +42,25 @@
 
 /* ─── Your styles below ─────────────────────────────────────── */
 
-/* ─── Partners section background + edge fades ───────────── */
+/* ─── Partners section background + edge fades ─────────────
+   Three stacked layers per Figma node 2345:20919:
+   (1) white-vignette overlay — transparent center → white edges
+   (2) faint square-grid pattern (40x40 tiled SVG)
+   (3) peach base — #fff3ed center → white edges */
 .dp-partners {
   background:
-    radial-gradient(ellipse 96vw 30vh at 50% 50%, rgba(255,243,237,0.55) 0%, rgba(255,255,255,1) 78%),
-    #fafafa;
+    radial-gradient(ellipse 96vw 47vh at 50% 50%,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.375) 61.5%,
+      rgba(255,255,255,1) 100%),
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'><path d='M0 0H40V40H0z' fill='none' stroke='%23cbd5e1' stroke-width='1' stroke-opacity='0.35'/></svg>"),
+    radial-gradient(ellipse 96vw 47vh at 50% 50%,
+      #fff3ed 0%,
+      #ffffff 100%);
+  background-size: auto, 40px 40px, auto;
+  background-repeat: no-repeat, repeat, no-repeat;
 }
+/* Side fade overlays (324px wide each, gradient to #fafafa) */
 .dp-partners::before,
 .dp-partners::after {
   content: "";
@@ -58,8 +71,8 @@
   pointer-events: none;
   z-index: 2;
 }
-.dp-partners::before { left: 0;  background: linear-gradient(to right, #fafafa 0%, rgba(250,250,250,0.65) 35%, rgba(250,250,250,0) 100%); }
-.dp-partners::after  { right: 0; background: linear-gradient(to left,  #fafafa 0%, rgba(250,250,250,0.65) 35%, rgba(250,250,250,0) 100%); }
+.dp-partners::before { left: 0;  background: linear-gradient(to right, #fafafa 0%, rgba(250,250,250,0.65) 28.5%, rgba(250,250,250,0) 78.5%); }
+.dp-partners::after  { right: 0; background: linear-gradient(to left,  #fafafa 0%, rgba(250,250,250,0.65) 28.5%, rgba(250,250,250,0) 78.5%); }
 
 /* ─── Marquee (used by .js-marquee + .js-marquee-track) ───── */
 .js-marquee { -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
