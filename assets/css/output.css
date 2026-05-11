@@ -471,6 +471,9 @@
   .table {
     display: table;
   }
+  .aspect-720\/520 {
+    aspect-ratio: 720/520;
+  }
   .aspect-\[121\/121\] {
     aspect-ratio: 121/121;
   }
@@ -571,6 +574,9 @@
   }
   .h-199\.5 {
     height: calc(var(--spacing) * 199.5);
+  }
+  .h-223 {
+    height: calc(var(--spacing) * 223);
   }
   .h-\[1\.5px\] {
     height: 1.5px;
@@ -2800,9 +2806,19 @@
       aspect-ratio: 1920/440;
     }
   }
+  .lg\:aspect-auto {
+    @media (width >= 64rem) {
+      aspect-ratio: auto;
+    }
+  }
   .lg\:h-8 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 8);
+    }
+  }
+  .lg\:h-223 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 223);
     }
   }
   .lg\:h-\[180px\] {
@@ -3219,6 +3235,11 @@
       padding-top: calc(var(--spacing) * 20);
     }
   }
+  .lg\:pt-25 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 25);
+    }
+  }
   .lg\:pt-\[32px\] {
     @media (width >= 64rem) {
       padding-top: 32px;
@@ -3252,6 +3273,11 @@
   .lg\:pb-20 {
     @media (width >= 64rem) {
       padding-bottom: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:pb-37\.5 {
+    @media (width >= 64rem) {
+      padding-bottom: calc(var(--spacing) * 37.5);
     }
   }
   .lg\:pb-\[100px\] {
