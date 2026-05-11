@@ -105,6 +105,10 @@
 .dp-why-swiper { width: 100%; min-width: 0; overflow: visible; }
 .dp-why-swiper .swiper-slide { height: auto; }
 
+/* 5-image strip swiper: right bleed, no padding container */
+.dp-strip-swiper { width: 100%; min-width: 0; overflow: visible; }
+.dp-strip-swiper .swiper-slide { height: auto; }
+
 /* ─── Contact tabs ────────────────────────────────────────── */
 .js-contact-tab { color: #0f172a; background: transparent; border: 1px solid transparent; transition: background-color 200ms, color 200ms, border-color 200ms; }
 .js-contact-tab.is-active { background: #e5f3ff; border-color: #cce7ff; color: #005299; }

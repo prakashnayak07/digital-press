@@ -229,6 +229,23 @@
       });
     }
 
+    // ── 5-image strip swiper (right-bleed, no buttons, loop).
+    if (typeof Swiper !== "undefined") {
+      document.querySelectorAll(".dp-strip-swiper").forEach((el) => {
+        new Swiper(el, {
+          slidesPerView: 1.3,
+          spaceBetween: 12,
+          grabCursor: true,
+          loop: true,
+          breakpoints: {
+            640: { slidesPerView: 2.2, spaceBetween: 12 },
+            1024: { slidesPerView: 3.2, spaceBetween: 12 },
+            1280: { slidesPerView: 3.5, spaceBetween: 12 },
+          },
+        });
+      });
+    }
+
     // ── Contact form tabs: SEND PRINTABLE FILE ↔ MAKE AN ENQUIRY.
     document.querySelectorAll(".js-contact-tabs").forEach((group) => {
       const tabs = group.querySelectorAll(".js-contact-tab");
