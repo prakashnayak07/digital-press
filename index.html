@@ -615,7 +615,7 @@
     <!-- ─── 7. Awards marquee ───────────────────────────────────── -->
     <section class="bg-white py-12 sm:py-16 lg:py-20">
       <div class="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8 2xl:px-0">
-        <div class="flex overflow-hidden rounded-[20px] border border-[#005aa9]">
+        <div class="flex overflow-hidden  border border-[#005aa9]">
           <div class="flex w-[44px] shrink-0 items-center justify-center bg-[#005aa9] sm:w-[56px]">
             <span
               class="font-heading text-[14px] font-bold uppercase tracking-[0.2em] text-white [writing-mode:vertical-rl] sm:text-[16px]"
@@ -641,31 +641,49 @@
       </div>
     </section>
 
-
-
     <!-- ─── 8. Insights & Inspiration carousel ──────────────────── -->
-    <section class="bg-white py-16 sm:py-20 lg:py-[120px]">
-      <div class="mx-auto flex max-w-[1400px] flex-col gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8 2xl:px-0">
-        <div class="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-          <div class="flex flex-col gap-3 lg:max-w-[820px]">
+    <section class="overflow-hidden bg-white py-16 sm:py-20 lg:py-[120px]">
+      <div class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 sm:px-6 lg:gap-10.5 lg:px-8 2xl:px-0">
+        <div class="flex items-end gap-3">
+          <div class="flex flex-1 flex-col items-center gap-1 text-center">
             <h2
-              class="font-heading text-[28px] font-bold leading-[1.15] tracking-[-0.56px] text-[#1e293b] sm:text-[36px] lg:text-[44px] lg:leading-[58.08px] lg:tracking-[-0.88px]">
+              class="font-heading text-[28px] font-bold leading-[1.15] tracking-[-0.56px] text-[#0f172a] sm:text-[36px] lg:text-[44px] lg:leading-[58.08px] lg:tracking-[-0.88px]">
               Insights &amp; Inspiration <span class="text-[#005299]">from the production.</span>
             </h2>
-            <p class="text-[16px] leading-[25.56px] text-[#334155] sm:text-[18px]">
+            <p class="max-w-176.5 text-[16px] leading-[25.56px] text-[#334155] sm:text-[18px]">
               Practical knowledge, print expertise, and execution insights drawn from real-world commercial
               printing—designed to help brands and agencies get it right the first time.
             </p>
           </div>
-          <div class="flex shrink-0 items-center gap-3">
-            <button type="button" class="js-insights-prev dp-nav-btn" aria-label="Previous"><span
-                aria-hidden="true">&lsaquo;</span></button>
-            <button type="button" class="js-insights-next dp-nav-btn" aria-label="Next"><span
-                aria-hidden="true">&rsaquo;</span></button>
+          <div class="hidden shrink-0 items-center gap-3 sm:flex">
+            <button type="button" class="js-insights-prev dp-nav-btn dp-nav-btn--gray" aria-label="Previous">
+              <span class="transform-[scaleX(-1)] flex items-center justify-center" aria-hidden="true">
+                <span class="relative block size-6 overflow-hidden">
+                  <span class="absolute bottom-1/4 left-[37.5%] right-[37.5%] top-1/4">
+                    <span class="absolute inset-[-5%_-10%]">
+                      <img src="assets/images/home/21516c7df90077a6eb813f2c7699f11c17bc3a24.svg" alt=""
+                        class="block size-full max-w-none" />
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
+            <button type="button" class="js-insights-next dp-nav-btn dp-nav-btn--gray" aria-label="Next">
+              <span class="flex items-center justify-center" aria-hidden="true">
+                <span class="relative block size-6 overflow-hidden">
+                  <span class="absolute bottom-1/4 left-[37.5%] right-[37.5%] top-1/4">
+                    <span class="absolute inset-[-5%_-10%]">
+                      <img src="assets/images/home/21516c7df90077a6eb813f2c7699f11c17bc3a24.svg" alt=""
+                        class="block size-full max-w-none" />
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
           </div>
         </div>
 
-        <div class="dp-bleed-section">
+        <div>
           <div class="dp-insights-swiper swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><a href="blog-detail.html" class="group flex flex-col gap-5">
@@ -673,15 +691,24 @@
                       src="assets/images/home/d1e778c9a48dbc1e00b806f285d2d0b89bb02c1f.png" alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[14px] text-[#64748b] sm:text-[16px]">19 Oct 2025</p>
-                    <h3
-                      class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
-                      Indigo Print Now Part of Digitalpress. Get Beautiful Print in North Sydney</h3>
-                    <p class="line-clamp-3 text-[14px] leading-[22.72px] text-[#64748b] sm:text-[16px]">It is with great
-                      pleasure I inform you that Indigo Print in North Sydney is now part of Digitalpress.</p><span
-                      class="inline-flex items-center gap-1 text-[14px] text-[#005299]">Read More <span
-                        aria-hidden="true">&rsaquo;</span></span>
+                  <div class="flex flex-col items-end gap-2">
+                    <div class="flex w-full flex-col gap-1">
+                      <p class="text-[16px] leading-[22.72px] text-[#64748b]">19 Oct 2025</p>
+                      <h3
+                        class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
+                        Indigo Print Now Part of Digitalpress. Get Beautiful Print in North Sydney</h3>
+                      <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">It is with
+                        great pleasure I inform you that Indigo Print in North Sydney is now part of Digitalpress.</p>
+                    </div>
+                    <span
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      More
+                      <span aria-hidden="true" class="inline-flex h-4 w-4 items-center justify-center"><svg
+                          viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
+                          aria-hidden="true">
+                          <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></span>
                   </div>
                 </a></div>
               <div class="swiper-slide"><a href="blog-detail.html" class="group flex flex-col gap-5">
@@ -689,15 +716,20 @@
                       src="assets/images/home/45a45141a369be8d70e9108b5ae447c22aee2e78.png" alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[14px] text-[#64748b] sm:text-[16px]">5 Dec 2025</p>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[16px] leading-[22.72px] text-[#64748b]">5 Dec 2025</p>
                     <h3
                       class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
                       Launch of New Recyclable Merchandise Line</h3>
-                    <p class="line-clamp-3 text-[14px] leading-[22.72px] text-[#64748b] sm:text-[16px]">Introducing our
+                    <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Introducing our
                       latest line of merchandise made entirely from recyclable materials.</p><span
-                      class="inline-flex items-center gap-1 text-[14px] text-[#005299]">Shop Now <span
-                        aria-hidden="true">&rsaquo;</span></span>
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Shop Now <span
+                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                          viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
+                          aria-hidden="true">
+                          <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></span>
                   </div>
                 </a></div>
               <div class="swiper-slide"><a href="blog-detail.html" class="group flex flex-col gap-5">
@@ -705,15 +737,20 @@
                       src="assets/images/blogs/a809e4c183e44775921461f38fb3a84ff93a42c8.png" alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[14px] text-[#64748b] sm:text-[16px]">15 Nov 2025</p>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[16px] leading-[22.72px] text-[#64748b]">15 Nov 2025</p>
                     <h3
                       class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
                       Partnership with Local Farmers for Sustainable Sourcing</h3>
-                    <p class="line-clamp-3 text-[14px] leading-[22.72px] text-[#64748b] sm:text-[16px]">In our
+                    <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">In our
                       commitment to sustainability we're partnering with local farmers.</p><span
-                      class="inline-flex items-center gap-1 text-[14px] text-[#005299]">Discover More <span
-                        aria-hidden="true">&rsaquo;</span></span>
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Discover More <span
+                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                          viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
+                          aria-hidden="true">
+                          <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></span>
                   </div>
                 </a></div>
               <div class="swiper-slide"><a href="blog-detail.html" class="group flex flex-col gap-5">
@@ -721,15 +758,20 @@
                       src="assets/images/home/eefe9a9a986d0c84d768db5e423ba95ef6cb4bdf.png" alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[14px] text-[#64748b] sm:text-[16px]">05 Nov 2025</p>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[16px] leading-[22.72px] text-[#64748b]">05 Nov 2025</p>
                     <h3
                       class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
                       Tech Innovations in E-Commerce</h3>
-                    <p class="line-clamp-3 text-[14px] leading-[22.72px] text-[#64748b] sm:text-[16px]">Join us for an
+                    <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Join us for an
                       insightful webinar on the latest e-commerce innovations.</p><span
-                      class="inline-flex items-center gap-1 text-[14px] text-[#005299]">Read More <span
-                        aria-hidden="true">&rsaquo;</span></span>
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read More <span
+                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                          viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
+                          aria-hidden="true">
+                          <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></span>
                   </div>
                 </a></div>
               <div class="swiper-slide"><a href="blog-detail.html" class="group flex flex-col gap-5">
@@ -737,15 +779,20 @@
                       src="assets/images/home/e5e1d4afa77622f305fe7a6d8b6c747149941872.png" alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[14px] text-[#64748b] sm:text-[16px]">15 Nov 2025</p>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[16px] leading-[22.72px] text-[#64748b]">15 Nov 2025</p>
                     <h3
                       class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
                       Company Hosts Annual Charity Gala</h3>
-                    <p class="line-clamp-3 text-[14px] leading-[22.72px] text-[#64748b] sm:text-[16px]">Our company is
+                    <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Our company is
                       proud to host the annual charity gala this year.</p><span
-                      class="inline-flex items-center gap-1 text-[14px] text-[#005299]">Read More <span
-                        aria-hidden="true">&rsaquo;</span></span>
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read More <span
+                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                          viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
+                          aria-hidden="true">
+                          <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></span>
                   </div>
                 </a></div>
               <div class="swiper-slide"><a href="blog-detail.html" class="group flex flex-col gap-5">
@@ -753,18 +800,50 @@
                       src="assets/images/home/ffc41ff8862584a9805815ffaeebb0fd672bfad7.png" alt=""
                       class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[14px] text-[#64748b] sm:text-[16px]">25 Oct 2025</p>
+                  <div class="flex flex-col gap-1">
+                    <p class="text-[16px] leading-[22.72px] text-[#64748b]">25 Oct 2025</p>
                     <h3
                       class="font-heading text-[18px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#1e293b] sm:text-[20px]">
                       New Eco-Friendly Packaging Solutions Launched</h3>
-                    <p class="line-clamp-3 text-[14px] leading-[22.72px] text-[#64748b] sm:text-[16px]">Reducing our
+                    <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Reducing our
                       carbon footprint with eco-friendly packaging.</p><span
-                      class="inline-flex items-center gap-1 text-[14px] text-[#005299]">Read More <span
-                        aria-hidden="true">&rsaquo;</span></span>
+                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read More <span
+                        class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
+                          viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
+                          aria-hidden="true">
+                          <path d="M0.6 0.6L6.6 6.6L0.6 12.6" stroke="currentColor" stroke-width="1.2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span></span>
                   </div>
                 </a></div>
             </div>
+          </div>
+          <!-- Mobile nav arrows below swiper -->
+          <div class="flex items-center justify-center gap-3 sm:hidden">
+            <button type="button" class="js-insights-prev dp-nav-btn dp-nav-btn--gray" aria-label="Previous">
+              <span class="transform-[scaleX(-1)] flex items-center justify-center" aria-hidden="true">
+                <span class="relative block size-6 overflow-hidden">
+                  <span class="absolute bottom-1/4 left-[37.5%] right-[37.5%] top-1/4">
+                    <span class="absolute inset-[-5%_-10%]">
+                      <img src="assets/images/home/21516c7df90077a6eb813f2c7699f11c17bc3a24.svg" alt=""
+                        class="block size-full max-w-none" />
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
+            <button type="button" class="js-insights-next dp-nav-btn dp-nav-btn--gray" aria-label="Next">
+              <span class="flex items-center justify-center" aria-hidden="true">
+                <span class="relative block size-6 overflow-hidden">
+                  <span class="absolute bottom-1/4 left-[37.5%] right-[37.5%] top-1/4">
+                    <span class="absolute inset-[-5%_-10%]">
+                      <img src="assets/images/home/21516c7df90077a6eb813f2c7699f11c17bc3a24.svg" alt=""
+                        class="block size-full max-w-none" />
+                    </span>
+                  </span>
+                </span>
+              </span>
+            </button>
           </div>
         </div>
       </div>

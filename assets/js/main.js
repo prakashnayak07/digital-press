@@ -173,14 +173,13 @@
     // ── Insights row carousel (with prev/next round buttons).
     if (typeof Swiper !== "undefined") {
       document.querySelectorAll(".dp-insights-swiper").forEach((el) => {
-        const wrap = el.parentElement;
         new Swiper(el, {
           slidesPerView: 1.1,
           spaceBetween: 16,
           grabCursor: true,
           navigation: {
-            nextEl: wrap?.querySelector(".js-insights-next") || null,
-            prevEl: wrap?.querySelector(".js-insights-prev") || null,
+            nextEl: ".js-insights-next",
+            prevEl: ".js-insights-prev",
           },
           breakpoints: {
             640: { slidesPerView: 2.2, spaceBetween: 20 },

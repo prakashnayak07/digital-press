@@ -731,6 +731,9 @@
   .w-15\.5 {
     width: calc(var(--spacing) * 15.5);
   }
+  .w-28 {
+    width: calc(var(--spacing) * 28);
+  }
   .w-46 {
     width: calc(var(--spacing) * 46);
   }
@@ -865,6 +868,9 @@
   }
   .w-max {
     width: max-content;
+  }
+  .max-w-176\.5 {
+    max-width: calc(var(--spacing) * 176.5);
   }
   .max-w-\[55\%\] {
     max-width: 55%;
@@ -1178,6 +1184,9 @@
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
+  }
+  .self-end {
+    align-self: flex-end;
   }
   .self-start {
     align-self: flex-start;
@@ -3022,6 +3031,11 @@
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:gap-10\.5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 10.5);
     }
   }
   .lg\:gap-12 {

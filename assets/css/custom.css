@@ -108,6 +108,9 @@
 .dp-nav-btn { display: inline-flex; align-items: center; justify-content: center; height: 42px; width: 42px; border-radius: 999px; background: #fff; border: 1px solid #005aa9; transition: background-color 200ms; }
 .dp-nav-btn:hover { background: #e5f3ff; }
 .dp-nav-btn.swiper-button-disabled { opacity: 0.4; pointer-events: none; }
+/* Gray variant per Figma node 2345:20952 — gray/100 bg, gray/200 border */
+.dp-nav-btn.dp-nav-btn--gray { background: #f1f5f9; border-color: #e2e8f0; }
+.dp-nav-btn.dp-nav-btn--gray:hover { background: #e2e8f0; }
 
 /* ─── Right-bleed swiper (Why-Us & Recent Blogs) ──────────── */
 /* The swiper itself is overflow:visible so slides bleed past the
@@ -121,6 +124,10 @@
 /* 5-image strip swiper: right bleed, no padding container */
 .dp-strip-swiper { width: 100%; min-width: 0; overflow: visible; }
 .dp-strip-swiper .swiper-slide { height: auto; }
+
+/* Insights swiper: right bleed (slides extend past container's right edge) */
+.dp-insights-swiper { width: 100%; min-width: 0; overflow: visible; }
+.dp-insights-swiper .swiper-slide { height: auto; }
 
 /* ─── Contact tabs ────────────────────────────────────────── */
 .js-contact-tab { color: #0f172a; background: transparent; border: 1px solid transparent; transition: background-color 200ms, color 200ms, border-color 200ms; }
