@@ -91,7 +91,7 @@ document.querySelector("header").innerHTML = `
           <a href="business-card.html" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Card</a>
           <a href="fast-document-printing.html" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Fast Document Printing</a>
           <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Stationery</a>
-          <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Marketing Material</a>
+          <a href="marketing-material.html" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Marketing Material</a>
           <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Books/Catalogues</a>
           <span class="shrink-0 px-1 text-[14px] leading-[19.88px] text-[#1e293b]">|</span>
           <button type="button" class="js-view-all-toggle shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]" aria-expanded="false" aria-controls="dp-view-all-menu">View All</button>
@@ -119,7 +119,7 @@ document.querySelector("header").innerHTML = `
               <img src="assets/images/services/business-stationery.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
               <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Stationery <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
-            <a href="#" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
+            <a href="marketing-material.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/marketing-material.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
               <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Marketing Material <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
@@ -242,7 +242,7 @@ document.querySelector("header").innerHTML = `
             <img src="assets/images/services/business-stationery.png" alt="" class="h-[184px] w-full object-cover max-[340px]:h-[166px]" />
             <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[18px] font-medium leading-[25.56px] text-[#005299]">Business Stationery <span aria-hidden="true" class="text-[24px] leading-none">&#8250;</span></span>
           </a>
-          <a href="#" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
+          <a href="marketing-material.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
             <img src="assets/images/services/marketing-material.png" alt="" class="h-[184px] w-full object-contain max-[340px]:h-[166px]" />
             <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[18px] font-medium leading-[25.56px] text-[#005299]">Marketing Material <span aria-hidden="true" class="text-[24px] leading-none">&#8250;</span></span>
           </a>
