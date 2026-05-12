@@ -88,7 +88,7 @@ document.querySelector("header").innerHTML = `
             <span class="dp-service-ribbon absolute inset-y-1 left-0 w-[113px] bg-[#99cfff]"></span>
             <span class="relative">Our Services</span>
           </a>
-          <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Card</a>
+          <a href="business-card.html" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Card</a>
           <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Fast Document Printing</a>
           <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Stationery</a>
           <a href="#" class="shrink-0 px-3 py-2 text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Marketing Material</a>
@@ -107,7 +107,7 @@ document.querySelector("header").innerHTML = `
       <div id="dp-view-all-menu" class="dp-view-all-menu absolute left-0 right-0 top-full z-30 min-h-screen bg-black/80 transition-all duration-200">
         <div class="border border-[#f1f5f9] bg-white px-6 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] xl:px-8 2xl:px-0">
           <div class="mx-auto grid max-w-[1400px] grid-cols-3 gap-5 xl:grid-cols-6 xl:gap-6">
-            <a href="#" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
+            <a href="business-card.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/business-cards.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
               <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Cards <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
@@ -230,7 +230,7 @@ document.querySelector("header").innerHTML = `
     <div class="w-full  rounded-t-[24px] border border-[#f1f5f9] bg-white px-4 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] max-[374px]:max-w-full">
       <div class="max-h-[min(567px,calc(100dvh-130px))] overflow-y-auto overflow-x-hidden pr-1">
         <div class="flex flex-col gap-4">
-          <a href="#" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
+          <a href="business-card.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
             <img src="assets/images/services/business-cards.png" alt="" class="h-[184px] w-full object-cover max-[340px]:h-[166px]" />
             <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[18px] font-medium leading-[25.56px] text-[#005299]">Business Cards <span aria-hidden="true" class="text-[24px] leading-none">&#8250;</span></span>
           </a>
@@ -285,3 +285,16 @@ document.querySelector("header").innerHTML = `
 </div>
 
 `;
+
+(function highlightActiveNav() {
+  const norm = (s) => (s || '').toLowerCase().split('/').pop().replace(/\.html$/, '') || 'index';
+  const current = norm(location.pathname);
+  document.querySelectorAll('header a[href]').forEach((a) => {
+    const href = a.getAttribute('href') || '';
+    if (!href || href.startsWith('#') || href.startsWith('tel:') || href.startsWith('mailto:')) return;
+    if (norm(href) === current) {
+      a.classList.remove('text-[#1e293b]');
+      a.classList.add('text-[#005299]');
+    }
+  });
+})();
