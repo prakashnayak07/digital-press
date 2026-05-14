@@ -105,56 +105,58 @@ document.querySelector("header").innerHTML = `
       </div>
 
       <div id="dp-view-all-menu" class="dp-view-all-menu absolute left-0 right-0 top-full z-30 transition-all duration-200">
-        <div class="border border-[#f1f5f9] bg-white px-6 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] xl:px-8 2xl:px-0">
-          <div class="mx-auto grid max-w-[1400px] grid-cols-3 gap-5 xl:grid-cols-6 xl:gap-6">
+        <div class="border border-[#f1f5f9] bg-white px-6 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] xl:px-6 2xl:px-0">
+          <div class="mx-auto max-w-[1400px]">
+          <div class="grid grid-cols-3 gap-5 xl:grid-cols-6 xl:gap-3 2xl:gap-6">
             <a href="business-card.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/business-cards.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Cards <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Business Cards <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="fast-document-printing.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/fast-document-printing.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Fast Doc Printing <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Fast Doc Printing <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="business-stationery.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/business-stationery.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Business Stationery <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Business Stationery <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="marketing-material.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/marketing-material.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Marketing Material <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Marketing Material <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="books-catalogues.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/books-catalogues.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Books/Catalogues <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Books/Catalogues <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="signage-poster.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/signage-poster.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Signage/Poster <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Signage/Poster <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="design.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/design.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Design <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Design <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="boxes-packaging.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/boxes-packaging.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Boxes/ Packaging <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Boxes/ Packaging <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="invitations-events.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/invitations-events.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Invitations / Events <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Invitations / Events <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="metallic-ink.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/metallic-ink.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">Metallic Ink <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Metallic Ink <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="white-ink.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/white-ink.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-4 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:text-[18px] xl:leading-[25.56px]">White Ink <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">White Ink <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <div class="flex h-60 flex-col justify-between rounded-[24px] border border-[#e2e8f0] bg-[#f8fafc] p-6">
               <p class="font-heading text-[24px] font-bold leading-[31.68px] tracking-[-0.48px] text-[#0f172a]">Looking for something else? We can help.</p>
-              <a href="contact.html" class="flex min-h-11 w-full items-center justify-center rounded-full border-2 border-white bg-[#005299] px-4 py-3 text-[18px] font-medium leading-[25.56px] text-white">Make an Enquiry</a>
+              <a href="contact.html" class="flex min-h-11 w-full items-center justify-center whitespace-nowrap rounded-full border-2 border-white bg-[#005299] px-3 py-3 text-[14px] font-medium leading-[20px] text-white 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px]">Make an Enquiry</a>
             </div>
+          </div>
           </div>
         </div>
         <button type="button" class="js-view-all-close mx-auto mt-3 flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white" aria-label="Close services menu">
