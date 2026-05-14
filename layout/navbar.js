@@ -104,7 +104,7 @@ document.querySelector("header").innerHTML = `
         </a>
       </div>
 
-      <div id="dp-view-all-menu" class="dp-view-all-menu absolute left-0 right-0 top-full z-30 min-h-screen bg-black/80 transition-all duration-200">
+      <div id="dp-view-all-menu" class="dp-view-all-menu absolute left-0 right-0 top-full z-30 transition-all duration-200">
         <div class="border border-[#f1f5f9] bg-white px-6 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] xl:px-8 2xl:px-0">
           <div class="mx-auto grid max-w-[1400px] grid-cols-3 gap-5 xl:grid-cols-6 xl:gap-6">
             <a href="business-card.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
