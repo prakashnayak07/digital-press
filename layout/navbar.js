@@ -114,7 +114,7 @@ document.querySelector("header").innerHTML = `
             </a>
             <a href="fast-document-printing.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/fast-document-printing.png" alt="" class="h-[184px] w-full object-contain xl:h-[184px]" />
-              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Fast Doc Printing <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
+              <span class="flex min-h-[56px] items-center gap-1 bg-white px-3 pb-4 pt-3 text-[16px] font-medium leading-[22.72px] text-[#005299] xl:px-2 xl:text-[14px] xl:leading-[20px] 2xl:px-4 2xl:text-[18px] 2xl:leading-[25.56px] whitespace-nowrap">Fast Document Printing <span aria-hidden="true" class="text-[22px] leading-none">&#8250;</span></span>
             </a>
             <a href="business-stationery.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
               <img src="assets/images/services/business-stationery.png" alt="" class="h-[184px] w-full object-cover xl:h-[184px]" />
