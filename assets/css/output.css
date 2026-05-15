@@ -372,6 +372,9 @@
   .-mb-25 {
     margin-bottom: calc(var(--spacing) * -25);
   }
+  .-mb-40 {
+    margin-bottom: calc(var(--spacing) * -40);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -588,6 +591,9 @@
   .h-\[320px\] {
     height: 320px;
   }
+  .h-\[370px\] {
+    height: 370px;
+  }
   .h-\[420px\] {
     height: 420px;
   }
@@ -596,6 +602,9 @@
   }
   .h-\[452px\] {
     height: 452px;
+  }
+  .h-\[480px\] {
+    height: 480px;
   }
   .h-auto {
     height: auto;
