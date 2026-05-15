@@ -143,13 +143,13 @@ document.querySelector("footer").innerHTML = `
                      class="flex-1 bg-transparent text-[14px] text-[#94a3b8] leading-[19.88px] outline-none placeholder:text-[#94a3b8] min-w-0" />
             </div>
           </div>
-          <button type="button"
+          <a href="contact.html"
                   class="bg-[#005299] text-white rounded-full px-4 py-3 flex items-center gap-1.5 w-[200px] justify-center hover:bg-[#004080] transition-colors">
             <span class="w-5 h-5 flex items-center justify-center flex-shrink-0">
               <img src="assets/images/icons/mail.svg" alt="" class="w-full h-full" />
             </span>
             <span class="text-[18px] font-medium leading-[25.56px] whitespace-nowrap">Make an Enquiry</span>
-          </button>
+          </a>
         </div>
 
         <!-- Decorative divider line (hidden on mobile) -->
