@@ -187,12 +187,12 @@ document.querySelector("footer").innerHTML = `
                 lg:flex-row lg:items-center lg:justify-between">
 
       <!-- Copyright -->
-      <p class="text-[16px] text-[#334155] leading-[22.72px] whitespace-nowrap order-2 lg:order-1">
+      <p class="text-[16px] text-[#334155] leading-[22.72px] whitespace-nowrap order-1 lg:order-1">
         All Right Reserved | @2026 - Digital Press
       </p>
 
       <!-- Legal links -->
-      <nav class="flex items-center order-3 lg:order-2" aria-label="Legal">
+      <nav class="flex items-center order-2 lg:order-2" aria-label="Legal">
         <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Terms</span><span aria-hidden="true">Terms</span></span></a>
         <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Privacy</span><span aria-hidden="true">Privacy</span></span></a>
         <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Cookies</span><span aria-hidden="true">Cookies</span></span></a>
@@ -200,7 +200,7 @@ document.querySelector("footer").innerHTML = `
       </nav>
 
       <!-- Language selector -->
-      <div class="relative order-1 lg:order-3">
+      <div class="relative order-3 lg:order-3">
         <button type="button" id="dp-lang-toggle" aria-haspopup="listbox" aria-expanded="false"
                 class="border border-[#e2e8f0] rounded-full px-4 py-3 flex items-center gap-2.5">
           <span class="w-6 h-6 flex-shrink-0">
