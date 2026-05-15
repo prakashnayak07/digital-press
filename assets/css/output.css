@@ -2113,6 +2113,11 @@
       aspect-ratio: 1920/480;
     }
   }
+  .sm\:aspect-\[1920\/650\] {
+    @media (width >= 40rem) {
+      aspect-ratio: 1920/650;
+    }
+  }
   .sm\:h-12 {
     @media (width >= 40rem) {
       height: calc(var(--spacing) * 12);
