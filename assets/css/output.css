@@ -281,6 +281,9 @@
   .bottom-1\/4 {
     bottom: calc(1 / 4 * 100%);
   }
+  .bottom-full {
+    bottom: 100%;
+  }
   .-left-\[230px\] {
     left: calc(230px * -1);
   }
@@ -388,6 +391,9 @@
   }
   .mt-auto {
     margin-top: auto;
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
@@ -850,6 +856,9 @@
   }
   .min-w-0 {
     min-width: calc(var(--spacing) * 0);
+  }
+  .min-w-\[160px\] {
+    min-width: 160px;
   }
   .flex-1 {
     flex: 1;
@@ -1702,6 +1711,10 @@
   }
   .shadow-\[0_45px_22\.5px_rgba\(0\,0\,0\,0\.11\)\] {
     --tw-shadow: 0 45px 22.5px var(--tw-shadow-color, rgba(0,0,0,0.11));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -3365,6 +3378,11 @@
   .xl\:px-3 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 3);
+    }
+  }
+  .xl\:px-4 {
+    @media (width >= 80rem) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .xl\:px-6 {

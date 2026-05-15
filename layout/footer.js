@@ -8,10 +8,10 @@ document.querySelector("footer").innerHTML = `
   .roll-wrap > span:last-child { position: absolute; top: 100%; left: 0; width: 100%; }
 </style>
 
-<div class="bg-[#e5f3ff] w-full">
+<div class="bg-[#e5f3ff] w-full px-4">
 
   <!-- ═══ MAIN BODY ═══ -->
-  <div class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-0
+  <div class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-4 2xl:px-0
               pt-8 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-[70px]
               flex flex-col gap-8 lg:gap-[69px]">
 
@@ -181,7 +181,7 @@ document.querySelector("footer").innerHTML = `
 
   <!-- ═══ BOTTOM BAR ═══ -->
   <div class="border-t border-[#f1f5f9] mt-8 lg:mt-[68px]">
-    <div class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-0
+    <div class="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-4 2xl:px-0
                 py-6 lg:py-[34px]
                 flex flex-col items-center gap-4
                 lg:flex-row lg:items-center lg:justify-between">
@@ -200,16 +200,21 @@ document.querySelector("footer").innerHTML = `
       </nav>
 
       <!-- Language selector -->
-      <button type="button"
-              class="order-1 lg:order-3 border border-[#e2e8f0] rounded-full px-4 py-3 flex items-center gap-2.5 hover:bg-white/50 transition-colors">
-        <span class="w-6 h-6 flex-shrink-0">
-          <img src="assets/images/icons/world.svg" alt="" class="w-full h-full" />
-        </span>
-        <span class="text-[18px] text-[#334155] leading-[25.56px] whitespace-nowrap">English</span>
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M5 7.5L10 12.5L15 7.5" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-      </button>
+      <div class="relative order-1 lg:order-3">
+        <button type="button" id="dp-lang-toggle" aria-haspopup="listbox" aria-expanded="false"
+                class="border border-[#e2e8f0] rounded-full px-4 py-3 flex items-center gap-2.5">
+          <span class="w-6 h-6 flex-shrink-0">
+            <img src="assets/images/icons/world.svg" alt="" class="w-full h-full" />
+          </span>
+          <span id="dp-lang-label" class="text-[18px] text-[#334155] leading-[25.56px] whitespace-nowrap">English</span>
+          <svg id="dp-lang-caret" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="transition-transform">
+            <path d="M5 7.5L10 12.5L15 7.5" stroke="#334155" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <ul id="dp-lang-menu" role="listbox" class="hidden absolute right-0 bottom-full mb-2 min-w-[160px] rounded-2xl border border-[#e2e8f0] bg-white shadow-lg overflow-hidden z-10">
+          <li><button type="button" data-lang="English" class="w-full text-left px-4 py-2 text-[16px] text-[#334155] hover:bg-[#f1f5f9]">English</button></li>
+        </ul>
+      </div>
 
     </div>
   </div>
@@ -217,3 +222,22 @@ document.querySelector("footer").innerHTML = `
 </div>
 
 `;
+
+(function () {
+  const toggle = document.getElementById("dp-lang-toggle");
+  const menu = document.getElementById("dp-lang-menu");
+  const label = document.getElementById("dp-lang-label");
+  const caret = document.getElementById("dp-lang-caret");
+  if (!toggle || !menu) return;
+  const close = () => { menu.classList.add("hidden"); toggle.setAttribute("aria-expanded", "false"); if (caret) caret.style.transform = ""; };
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const open = menu.classList.toggle("hidden");
+    toggle.setAttribute("aria-expanded", String(!open));
+    if (caret) caret.style.transform = open ? "" : "rotate(180deg)";
+  });
+  menu.querySelectorAll("[data-lang]").forEach((btn) => {
+    btn.addEventListener("click", () => { if (label) label.textContent = btn.dataset.lang; close(); });
+  });
+  document.addEventListener("click", (e) => { if (!menu.contains(e.target) && e.target !== toggle) close(); });
+})();
