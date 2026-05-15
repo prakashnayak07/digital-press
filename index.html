@@ -381,11 +381,11 @@
     <!-- ─── 4. "Ready to print right?" hero CTA ─────────────────── -->
     <section class="relative overflow-hidden bg-[#cce7ff]">
       <img src="assets/images/home/ready-cta-photo.png" alt="" aria-hidden="true"
-        class="pointer-events-none z-10 absolute right-0 top-1/2 hidden h-full w-auto max-w-none -translate-y-1/2 -scale-x-100 object-contain object-right lg:block" />
+        class="pointer-events-none z-10 hidden h-full w-auto max-w-none -translate-y-1/2 -scale-x-100 object-contain object-right lg:absolute lg:-right-20 lg:top-1/2 lg:block" />
       <img src="assets/images/home/ready-cta-bg.svg" alt="" aria-hidden="true"
-        class="pointer-events-none absolute -right-27.5 top-0 h-[100%] w-262.25 max-w-none" />
+        class="pointer-events-none absolute -right-27.5 top-0 hidden h-[100%] w-262.25 max-w-none sm:block" />
       <div
-        class="relative mx-auto flex max-w-[1400px] flex-col items-start justify-end gap-5 px-4 py-16 sm:px-6 sm:py-20 lg:min-h-[680px] lg:px-13 lg:py-13 2xl:px-0">
+        class="relative mx-auto flex max-w-[1400px] flex-col items-start justify-end gap-5 px-6 py-6 sm:px-6 sm:py-20 lg:min-h-[680px] lg:px-13 lg:py-13 2xl:px-0">
         <div class="flex flex-col items-start gap-3">
           <span
             class="inline-flex items-center rounded-full border border-[#005299] bg-transparent px-3 py-2 text-[14px] font-medium leading-[22.72px] text-[#005299] sm:text-[16px]">Award-winning
@@ -416,6 +416,10 @@
               </svg>
             </span>
           </a>
+        </div>
+        <div class="-mb-25 w-full mx-auto mt-4 h-[260px] overflow-hidden lg:hidden">
+          <img src="assets/images/home/ready-cta-photo.png" alt="" aria-hidden="true"
+            class="pointer-events-none h-full w-full -scale-x-100 object-cover object-top" />
         </div>
       </div>
     </section>
