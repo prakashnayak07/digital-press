@@ -20,7 +20,7 @@ document.querySelector("footer").innerHTML = `
                 lg:flex-row lg:items-center lg:justify-between">
 
       <!-- Logo (3-part SVG composition, matches Figma grid layout) -->
-      <a href="/" aria-label="Digital Press Home"
+      <a href="index.html" aria-label="Digital Press Home"
          class="relative flex-shrink-0"
          style="width:190px; height:42px;">
         <!-- Mark (left accent) -->
@@ -75,12 +75,12 @@ document.querySelector("footer").innerHTML = `
         <div class="flex flex-col gap-3">
           <p class="font-heading px-3 text-[18px] font-semibold text-[#1e293b] leading-[25.56px]">Quick Links</p>
           <ul class="flex flex-col">
-            <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Home</span><span aria-hidden="true">Home</span></span></a></li>
-            <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>About Us</span><span aria-hidden="true">About Us</span></span></a></li>
-            <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Case Studies</span><span aria-hidden="true">Case Studies</span></span></a></li>
-            <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Blogs</span><span aria-hidden="true">Blogs</span></span></a></li>
-            <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>FAQ</span><span aria-hidden="true">FAQ</span></span></a></li>
-            <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Contact Us</span><span aria-hidden="true">Contact Us</span></span></a></li>
+            <li><a href="index.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Home</span><span aria-hidden="true">Home</span></span></a></li>
+            <li><a href="about.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>About Us</span><span aria-hidden="true">About Us</span></span></a></li>
+            <li><a href="case-studies.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Case Studies</span><span aria-hidden="true">Case Studies</span></span></a></li>
+            <li><a href="blogs.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Blogs</span><span aria-hidden="true">Blogs</span></span></a></li>
+            <li><a href="faq.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>FAQ</span><span aria-hidden="true">FAQ</span></span></a></li>
+            <li><a href="contact.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Contact Us</span><span aria-hidden="true">Contact Us</span></span></a></li>
           </ul>
         </div>
 
@@ -93,27 +93,27 @@ document.querySelector("footer").innerHTML = `
 
             <!-- Column 1 (always visible) -->
             <ul class="flex flex-col">
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Business Cards</span><span aria-hidden="true">Business Cards</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Business Stationery</span><span aria-hidden="true">Business Stationery</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Fast Document Printing</span><span aria-hidden="true">Fast Document Printing</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Marketing Material</span><span aria-hidden="true">Marketing Material</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Books / Catalogues</span><span aria-hidden="true">Books / Catalogues</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Signage / Posters</span><span aria-hidden="true">Signage / Posters</span></span></a></li>
+              <li><a href="business-card.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Business Cards</span><span aria-hidden="true">Business Cards</span></span></a></li>
+              <li><a href="business-stationery.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Business Stationery</span><span aria-hidden="true">Business Stationery</span></span></a></li>
+              <li><a href="fast-document-printing.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Fast Document Printing</span><span aria-hidden="true">Fast Document Printing</span></span></a></li>
+              <li><a href="marketing-material.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Marketing Material</span><span aria-hidden="true">Marketing Material</span></span></a></li>
+              <li><a href="books-catalogues.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Books / Catalogues</span><span aria-hidden="true">Books / Catalogues</span></span></a></li>
+              <li><a href="signage-poster.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Signage / Posters</span><span aria-hidden="true">Signage / Posters</span></span></a></li>
               <!-- Mobile only: col 2 items -->
-              <li class="lg:hidden"><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Ready Design</span><span aria-hidden="true">Ready Design</span></span></a></li>
-              <li class="lg:hidden"><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Invitations / Events</span><span aria-hidden="true">Invitations / Events</span></span></a></li>
-              <li class="lg:hidden"><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Metallic Ink</span><span aria-hidden="true">Metallic Ink</span></span></a></li>
-              <li class="lg:hidden"><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Boxes / Packaging</span><span aria-hidden="true">Boxes / Packaging</span></span></a></li>
-              <li class="lg:hidden"><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>White Ink</span><span aria-hidden="true">White Ink</span></span></a></li>
+              <li class="lg:hidden"><a href="design.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Ready Design</span><span aria-hidden="true">Ready Design</span></span></a></li>
+              <li class="lg:hidden"><a href="invitations-events.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Invitations / Events</span><span aria-hidden="true">Invitations / Events</span></span></a></li>
+              <li class="lg:hidden"><a href="metallic-ink.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Metallic Ink</span><span aria-hidden="true">Metallic Ink</span></span></a></li>
+              <li class="lg:hidden"><a href="boxes-packaging.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Boxes / Packaging</span><span aria-hidden="true">Boxes / Packaging</span></span></a></li>
+              <li class="lg:hidden"><a href="white-ink.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>White Ink</span><span aria-hidden="true">White Ink</span></span></a></li>
             </ul>
 
             <!-- Column 2 (desktop only) -->
             <ul class="hidden lg:flex flex-col">
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Ready Design</span><span aria-hidden="true">Ready Design</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Invitations / Events</span><span aria-hidden="true">Invitations / Events</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Metallic Ink</span><span aria-hidden="true">Metallic Ink</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Boxes / Packaging</span><span aria-hidden="true">Boxes / Packaging</span></span></a></li>
-              <li><a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>White Ink</span><span aria-hidden="true">White Ink</span></span></a></li>
+              <li><a href="design.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Ready Design</span><span aria-hidden="true">Ready Design</span></span></a></li>
+              <li><a href="invitations-events.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Invitations / Events</span><span aria-hidden="true">Invitations / Events</span></span></a></li>
+              <li><a href="metallic-ink.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Metallic Ink</span><span aria-hidden="true">Metallic Ink</span></span></a></li>
+              <li><a href="boxes-packaging.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Boxes / Packaging</span><span aria-hidden="true">Boxes / Packaging</span></span></a></li>
+              <li><a href="white-ink.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>White Ink</span><span aria-hidden="true">White Ink</span></span></a></li>
             </ul>
 
           </div>
