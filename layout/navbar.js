@@ -54,7 +54,7 @@ document.querySelector("header").innerHTML = `
       </a>
 
       <nav class="flex min-w-0 flex-1 items-center justify-center gap-1 xl:gap-3" aria-label="Primary">
-        <a href="index.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Home</a>
+        <a href="index.html" data-nav-link="index.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Home</a>
         <a href="about.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">About Us</a>
         <a href="case-studies.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Case Studies</a>
         <a href="blogs.html" class="px-2 py-2 text-center text-[15px] leading-[22px] text-[#1e293b] hover:text-[#005299] xl:px-3 xl:text-[18px] xl:leading-[25.56px]">Blogs</a>
