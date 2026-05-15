@@ -628,12 +628,12 @@
             </p>
           </div>
 
-          <div class="js-contact-tabs flex w-full gap-3 rounded-full border border-[#e2e8f0] bg-[#f8fafc] p-1">
+          <div class="js-contact-tabs flex w-full gap-1 rounded-full border border-[#e2e8f0] bg-[#f8fafc] p-1 sm:gap-3">
             <button type="button" data-tab="file"
-              class="js-contact-tab is-active flex-1 rounded-full px-4 py-3 text-[14px] font-medium leading-[22.72px] sm:text-[16px]"
+              class="js-contact-tab is-active flex-1 whitespace-nowrap rounded-full px-2 py-3 text-[12px] font-medium leading-[22.72px] sm:px-4 sm:text-[16px]"
               aria-selected="true">SEND PRINTABLE FILE</button>
             <button type="button" data-tab="enquiry"
-              class="js-contact-tab flex-1 rounded-full px-4 py-3 text-[14px] font-medium leading-[22.72px] sm:text-[16px]"
+              class="js-contact-tab flex-1 whitespace-nowrap rounded-full px-2 py-3 text-[12px] font-medium leading-[22.72px] sm:px-4 sm:text-[16px]"
               aria-selected="false">MAKE AN ENQUIRY</button>
           </div>
 
@@ -670,14 +670,14 @@
                 class="border-b border-[#e2e8f0] bg-transparent p-2 pb-10 text-[16px] leading-[22.72px] text-[#0f172a] placeholder:text-[#cbd5e1] focus:border-[#005299] focus:outline-none"></textarea></label>
 
             <button type="submit"
-              class="js-contact-submit inline-flex min-h-11 w-[180px] items-center justify-center gap-1.5 rounded-full bg-[#005299] px-4 py-3 text-[16px] font-medium leading-[25.56px] text-white transition-colors hover:bg-[#004987] sm:text-[18px]">Submit
+              class="js-contact-submit inline-flex min-h-11 w-full items-center justify-center gap-1.5 rounded-full bg-[#005299] px-4 py-3 text-[16px] font-medium leading-[25.56px] text-white transition-colors hover:bg-[#004987] sm:w-[180px] sm:text-[18px]">Submit
               File</button>
           </form>
         </div>
 
-        <div class="hidden lg:block lg:flex-1">
+        <div class="w-full lg:flex-1">
           <img src="assets/images/home/ffc41ff8862584a9805815ffaeebb0fd672bfad7.png" alt=""
-            class="h-full w-full rounded-[24px] object-cover" />
+            class="aspect-[375/420] h-auto w-full rounded-none md:rounded-[24px] object-cover lg:aspect-auto lg:h-full" />
         </div>
       </div>
     </section>
@@ -714,9 +714,9 @@
     <section class="overflow-hidden bg-white py-16 sm:py-20 lg:py-[60px]">
       <div class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 sm:px-6 lg:gap-10.5 lg:px-8 2xl:px-0">
         <div class="flex items-end gap-3">
-          <div class="flex flex-1 flex-col items-center gap-1 text-center">
+          <div class="flex flex-1 flex-col items-center gap-3 text-center sm:gap-1">
             <h2
-              class="font-heading text-[28px] font-bold leading-[1.15] tracking-[-0.56px] text-[#0f172a] sm:text-[36px] lg:text-[44px] lg:leading-[58.08px] lg:tracking-[-0.88px]">
+              class="font-heading text-[32px] font-bold leading-[42.24px] tracking-[-0.64px] text-[#0f172a] sm:text-[36px] lg:text-[44px] lg:leading-[58.08px] lg:tracking-[-0.88px]">
               Insights &amp; Inspiration <span class="text-[#005299]">from the production.</span>
             </h2>
             <p class="max-w-176.5 text-[16px] leading-[25.56px] text-[#334155] sm:text-[18px]">
@@ -770,7 +770,7 @@
                         great pleasure I inform you that Indigo Print in North Sydney is now part of Digitalpress.</p>
                     </div>
                     <span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      class="hidden sm:inline-flex h-12.5 w-28 items-center justify-center gap-1 rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
                       More
                       <span aria-hidden="true" class="inline-flex h-4 w-4 items-center justify-center"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
@@ -792,7 +792,7 @@
                       Launch of New Recyclable Merchandise Line</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Introducing our
                       latest line of merchandise made entirely from recyclable materials.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Shop
+                      class="hidden sm:inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Shop
                       Now <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
@@ -813,7 +813,7 @@
                       Partnership with Local Farmers for Sustainable Sourcing</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">In our
                       commitment to sustainability we're partnering with local farmers.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Discover
+                      class="hidden sm:inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Discover
                       More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
@@ -834,7 +834,7 @@
                       Tech Innovations in E-Commerce</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Join us for an
                       insightful webinar on the latest e-commerce innovations.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      class="hidden sm:inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
                       More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
@@ -855,7 +855,7 @@
                       Company Hosts Annual Charity Gala</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Our company is
                       proud to host the annual charity gala this year.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      class="hidden sm:inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
                       More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
@@ -876,7 +876,7 @@
                       New Eco-Friendly Packaging Solutions Launched</h3>
                     <p class="line-clamp-3 text-[16px] leading-[25.56px] text-[#64748b] sm:text-[18px]">Reducing our
                       carbon footprint with eco-friendly packaging.</p><span
-                      class="inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
+                      class="hidden sm:inline-flex h-12.5 w-28 items-center justify-center gap-1 self-end rounded-full px-4 py-1 text-[14px] leading-[19.88px] text-[#005299]">Read
                       More <span class="inline-flex h-4 w-4 items-center justify-center" aria-hidden="true"><svg
                           viewBox="0 0 7.2 13.2" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-[10px] w-[6px]"
                           aria-hidden="true">
@@ -888,7 +888,7 @@
             </div>
           </div>
           <!-- Mobile nav arrows below swiper -->
-          <div class="flex items-center justify-center gap-3 sm:hidden">
+          <div class="mt-6 flex items-center justify-center gap-3 sm:hidden">
             <button type="button" class="js-insights-prev dp-nav-btn dp-nav-btn--gray" aria-label="Previous">
               <span class="transform-[scaleX(-1)] flex items-center justify-center" aria-hidden="true">
                 <span class="relative block size-6 overflow-hidden">

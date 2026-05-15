@@ -174,8 +174,8 @@
     if (typeof Swiper !== "undefined") {
       document.querySelectorAll(".dp-insights-swiper").forEach((el) => {
         new Swiper(el, {
-          slidesPerView: 1.1,
-          spaceBetween: 16,
+          slidesPerView: 1,
+          spaceBetween: 12,
           grabCursor: true,
           navigation: {
             nextEl: ".js-insights-next",
