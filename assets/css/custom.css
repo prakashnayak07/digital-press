@@ -75,8 +75,7 @@
 .dp-partners::after  { right: 0; background: linear-gradient(to left,  #fafafa 0%, rgba(250,250,250,0.65) 28.5%, rgba(250,250,250,0) 78.5%); }
 
 /* ─── Marquee (used by .js-marquee + .js-marquee-track) ───── */
-.js-marquee { -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
-.dp-partners .js-marquee { -webkit-mask-image: none; mask-image: none; }
+.js-marquee { -webkit-mask-image: none; mask-image: none; }
 .js-marquee-track { animation: dp-marquee var(--dp-marquee-duration, 40s) linear infinite; will-change: transform; }
 .js-marquee[data-marquee-direction="reverse"] .js-marquee-track { animation-direction: reverse; }
 .js-marquee:hover .js-marquee-track { animation-play-state: paused; }
