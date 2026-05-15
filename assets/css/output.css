@@ -503,6 +503,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -658,6 +661,9 @@
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-7 {
+    width: calc(var(--spacing) * 7);
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
@@ -856,6 +862,9 @@
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .flex-grow {
+    flex-grow: 1;
   }
   .grow {
     flex-grow: 1;
@@ -2694,6 +2703,11 @@
       width: 200px;
     }
   }
+  .lg\:w-\[300px\] {
+    @media (width >= 64rem) {
+      width: 300px;
+    }
+  }
   .lg\:w-\[320px\] {
     @media (width >= 64rem) {
       width: 320px;
@@ -3390,6 +3404,11 @@
       line-height: 25.56px;
     }
   }
+  .\32 xl\:w-\[352px\] {
+    @media (width >= 96rem) {
+      width: 352px;
+    }
+  }
   .\32 xl\:w-\[720px\] {
     @media (width >= 96rem) {
       width: 720px;
@@ -3403,6 +3422,11 @@
   .\32 xl\:gap-6 {
     @media (width >= 96rem) {
       gap: calc(var(--spacing) * 6);
+    }
+  }
+  .\32 xl\:gap-8 {
+    @media (width >= 96rem) {
+      gap: calc(var(--spacing) * 8);
     }
   }
   .\32 xl\:overflow-visible {
