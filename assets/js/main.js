@@ -238,8 +238,8 @@
           loop: true,
           breakpoints: {
             640: { slidesPerView: 2.2, spaceBetween: 12 },
-            1024: { slidesPerView: 3.2, spaceBetween: 12 },
-            1280: { slidesPerView: 3.5, spaceBetween: 12 },
+            1024: { slidesPerView: 3.1, spaceBetween: 12 },
+            1280: { slidesPerView: 3.1, spaceBetween: 12 },
           },
         });
       });
