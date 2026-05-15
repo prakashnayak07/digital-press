@@ -653,8 +653,14 @@
   .min-h-70 {
     min-height: calc(var(--spacing) * 70);
   }
+  .min-h-\[52px\] {
+    min-height: 52px;
+  }
   .min-h-\[56px\] {
     min-height: 56px;
+  }
+  .min-h-\[76px\] {
+    min-height: 76px;
   }
   .min-h-\[92px\] {
     min-height: 92px;
@@ -2170,6 +2176,11 @@
   .sm\:min-h-70 {
     @media (width >= 40rem) {
       min-height: calc(var(--spacing) * 70);
+    }
+  }
+  .sm\:min-h-\[78px\] {
+    @media (width >= 40rem) {
+      min-height: 78px;
     }
   }
   .sm\:min-h-\[280px\] {
