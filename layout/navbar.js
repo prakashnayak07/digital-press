@@ -2,7 +2,7 @@ document.querySelector("header").innerHTML = `
 
 <style>
   .dp-service-ribbon {
-    clip-path: polygon(0 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 0 100%);
+    clip-path: polygon(0 0, calc(100% - 11px) 0, 100% 50%, calc(100% - 11px) 100%, 0 100%);
   }
 
   .dp-view-all-menu,
@@ -10,20 +10,13 @@ document.querySelector("header").innerHTML = `
     opacity: 0;
     pointer-events: none;
     transform: translateY(-8px);
-  }
-
-  .dp-view-all-menu {
-    transform: translateY(-8px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
   }
 
   .dp-view-all-menu.is-open,
   .dp-mobile-menu.is-open {
     opacity: 1;
     pointer-events: auto;
-    transform: translateY(0);
-  }
-
-  .dp-view-all-menu.is-open {
     transform: translateY(0);
   }
 
@@ -105,7 +98,7 @@ document.querySelector("header").innerHTML = `
       </div>
 
       <div id="dp-view-all-menu" class="dp-view-all-menu absolute left-0 right-0 top-full z-30 transition-all duration-200">
-        <div class="border border-[#f1f5f9] bg-white px-6 pb-[42px] pt-6 shadow-[0_45px_22.5px_rgba(0,0,0,0.11)] xl:px-6 2xl:px-0">
+        <div class="border border-[#f1f5f9] bg-white px-6 pb-[42px] pt-6 shadow-[0_24px_48px_rgba(15,23,42,0.18)] xl:px-6 2xl:px-0">
           <div class="mx-auto max-w-[1400px]">
           <div class="grid grid-cols-3 gap-5 xl:grid-cols-6 xl:gap-3 2xl:gap-6">
             <a href="business-card.html" class="overflow-hidden rounded-[24px] border border-[#f1f5f9] bg-[#e2e8f0]">
