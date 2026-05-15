@@ -525,6 +525,9 @@
   .h-65 {
     height: calc(var(--spacing) * 65);
   }
+  .h-140 {
+    height: calc(var(--spacing) * 140);
+  }
   .h-199 {
     height: calc(var(--spacing) * 199);
   }
@@ -681,11 +684,17 @@
   .w-28 {
     width: calc(var(--spacing) * 28);
   }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
+  }
   .w-46 {
     width: calc(var(--spacing) * 46);
   }
   .w-46\.25 {
     width: calc(var(--spacing) * 46.25);
+  }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
   }
   .w-208 {
     width: calc(var(--spacing) * 208);
@@ -872,6 +881,10 @@
     --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .translate-x-12 {
+    --tw-translate-x: calc(var(--spacing) * 12);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .translate-x-37 {
     --tw-translate-x: calc(var(--spacing) * 37);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -886,6 +899,10 @@
   }
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-25 {
+    --tw-translate-y: calc(var(--spacing) * -25);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-45 {
@@ -1286,6 +1303,9 @@
   }
   .p-\[3px\] {
     padding: 3px;
+  }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
@@ -2034,6 +2054,11 @@
       display: inline-flex;
     }
   }
+  .sm\:aspect-\[625\/720\] {
+    @media (width >= 40rem) {
+      aspect-ratio: 625/720;
+    }
+  }
   .sm\:aspect-\[1920\/480\] {
     @media (width >= 40rem) {
       aspect-ratio: 1920/480;
@@ -2569,6 +2594,11 @@
       right: calc(var(--spacing) * -20);
     }
   }
+  .lg\:-right-40 {
+    @media (width >= 64rem) {
+      right: calc(var(--spacing) * -40);
+    }
+  }
   .lg\:right-0 {
     @media (width >= 64rem) {
       right: calc(var(--spacing) * 0);
@@ -2687,6 +2717,11 @@
   .lg\:h-223 {
     @media (width >= 64rem) {
       height: calc(var(--spacing) * 223);
+    }
+  }
+  .lg\:h-\[80\%\] {
+    @media (width >= 64rem) {
+      height: 80%;
     }
   }
   .lg\:h-\[180px\] {
@@ -3304,6 +3339,11 @@
       top: 37px;
     }
   }
+  .xl\:-right-20 {
+    @media (width >= 80rem) {
+      right: calc(var(--spacing) * -20);
+    }
+  }
   .xl\:left-\[57px\] {
     @media (width >= 80rem) {
       left: 57px;
@@ -3317,6 +3357,11 @@
   .xl\:flex {
     @media (width >= 80rem) {
       display: flex;
+    }
+  }
+  .xl\:h-160 {
+    @media (width >= 80rem) {
+      height: calc(var(--spacing) * 160);
     }
   }
   .xl\:h-\[14px\] {
@@ -3339,6 +3384,11 @@
       height: 54px;
     }
   }
+  .xl\:h-\[85\%\] {
+    @media (width >= 80rem) {
+      height: 85%;
+    }
+  }
   .xl\:h-\[184px\] {
     @media (width >= 80rem) {
       height: 184px;
@@ -3347,6 +3397,11 @@
   .xl\:min-h-\[101px\] {
     @media (width >= 80rem) {
       min-height: 101px;
+    }
+  }
+  .xl\:w-170 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 170);
     }
   }
   .xl\:w-\[44px\] {
@@ -3382,6 +3437,12 @@
   .xl\:translate-x-0 {
     @media (width >= 80rem) {
       --tw-translate-x: calc(var(--spacing) * 0);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .xl\:-translate-y-30 {
+    @media (width >= 80rem) {
+      --tw-translate-y: calc(var(--spacing) * -30);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
@@ -3457,6 +3518,21 @@
       margin-top: calc(220px * -1);
     }
   }
+  .\32 xl\:h-199\.5 {
+    @media (width >= 96rem) {
+      height: calc(var(--spacing) * 199.5);
+    }
+  }
+  .\32 xl\:h-full {
+    @media (width >= 96rem) {
+      height: 100%;
+    }
+  }
+  .\32 xl\:w-208\.5 {
+    @media (width >= 96rem) {
+      width: calc(var(--spacing) * 208.5);
+    }
+  }
   .\32 xl\:w-\[352px\] {
     @media (width >= 96rem) {
       width: 352px;
@@ -3465,6 +3541,12 @@
   .\32 xl\:w-\[720px\] {
     @media (width >= 96rem) {
       width: 720px;
+    }
+  }
+  .\32 xl\:-translate-y-45\.25 {
+    @media (width >= 96rem) {
+      --tw-translate-y: calc(var(--spacing) * -45.25);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
   .\32 xl\:gap-6 {
