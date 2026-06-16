@@ -214,17 +214,17 @@
           <!-- Share -->
           <div class="flex flex-col gap-3">
             <h2 class="font-heading text-[20px] font-bold leading-[26.4px] tracking-[-0.4px] text-[#0f172a]">Share</h2>
-            <div class="flex items-center gap-4 pl-1">
-              <a href="#" aria-label="Share on LinkedIn" class="block h-6 w-6"><img
+            <div class="flex items-center gap-4 pl-1" data-share>
+              <a href="#" data-share-network="linkedin" aria-label="Share on LinkedIn" class="block h-6 w-6"><img
                   src="assets/images/blogs/dd40c2fff3f3328329948341f2ab057c65efbf90.svg" alt=""
                   class="h-full w-full" /></a>
-              <a href="#" aria-label="Share on Twitter" class="block h-6 w-6"><img
+              <a href="#" data-share-network="twitter" aria-label="Share on Twitter" class="block h-6 w-6"><img
                   src="assets/images/blogs/540a3e935d5e1719e267d02690a65c2c71756130.svg" alt=""
                   class="h-full w-full" /></a>
-              <a href="#" aria-label="Share on Instagram" class="block h-6 w-6"><img
+              <a href="#" data-share-network="instagram" aria-label="Share on Instagram" class="block h-6 w-6"><img
                   src="assets/images/blogs/4f6d62c7ae45d83508c05560c26511b7476dab94.svg" alt=""
                   class="h-full w-full" /></a>
-              <a href="#" aria-label="Share on Facebook" class="block h-6 w-6"><img
+              <a href="#" data-share-network="facebook" aria-label="Share on Facebook" class="block h-6 w-6"><img
                   src="assets/images/blogs/fbf8b8da4cd3072441cc0007f1bb28a6eebb7d3e.svg" alt=""
                   class="h-full w-full" /></a>
             </div>
@@ -416,6 +416,56 @@
       const words = el.textContent.trim().split(/\s+/);
       if (words.length > max) el.textContent = words.slice(0, max).join(" ") + "...";
     });
+  </script>
+  <script>
+    // Social share buttons
+    (function () {
+      const container = document.querySelector("[data-share]");
+      if (!container) return;
+
+      const pageUrl = window.location.href;
+      const pageTitle = document.title || "";
+
+      const buildShareUrl = (network) => {
+        const u = encodeURIComponent(pageUrl);
+        const t = encodeURIComponent(pageTitle);
+        switch (network) {
+          case "linkedin":
+            return `https://www.linkedin.com/sharing/share-offsite/?url=${u}`;
+          case "twitter":
+            return `https://twitter.com/intent/tweet?url=${u}&text=${t}`;
+          case "facebook":
+            return `https://www.facebook.com/sharer/sharer.php?u=${u}`;
+          default:
+            return null;
+        }
+      };
+
+      container.querySelectorAll("[data-share-network]").forEach((link) => {
+        const network = link.dataset.shareNetwork;
+        const shareUrl = buildShareUrl(network);
+        if (shareUrl) link.setAttribute("href", shareUrl);
+
+        link.addEventListener("click", function (e) {
+          // Instagram has no web share URL — fall back to native share or copy link
+          if (network === "instagram") {
+            e.preventDefault();
+            if (navigator.share) {
+              navigator.share({ title: pageTitle, url: pageUrl }).catch(() => {});
+            } else if (navigator.clipboard) {
+              navigator.clipboard.writeText(pageUrl).then(() => {
+                alert("Link copied to clipboard");
+              });
+            }
+            return;
+          }
+
+          if (!shareUrl) return;
+          e.preventDefault();
+          window.open(shareUrl, "_blank", "noopener,noreferrer,width=600,height=600");
+        });
+      });
+    })();
   </script>
 </body>
 
