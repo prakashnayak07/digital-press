@@ -406,6 +406,10 @@
 
   <footer></footer>
 
+  <div id="copy-notification" class="fixed bottom-5 right-5 z-100 bg-slate-800 text-white py-3 px-5 rounded-md shadow-lg opacity-0 transition-opacity duration-300 ease-in-out pointer-events-none">
+    Link copied to clipboard!
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="layout/navbar.js"></script>
   <script src="layout/footer.js"></script>
@@ -422,10 +426,8 @@
     (function () {
       const container = document.querySelector("[data-share]");
       if (!container) return;
-
       const pageUrl = window.location.href;
       const pageTitle = document.title || "";
-
       const buildShareUrl = (network) => {
         const u = encodeURIComponent(pageUrl);
         const t = encodeURIComponent(pageTitle);
@@ -436,33 +438,43 @@
             return `https://twitter.com/intent/tweet?url=${u}&text=${t}`;
           case "facebook":
             return `https://www.facebook.com/sharer/sharer.php?u=${u}`;
+          case "instagram":
+            return "https://www.instagram.com/";
           default:
             return null;
         }
       };
-
       container.querySelectorAll("[data-share-network]").forEach((link) => {
         const network = link.dataset.shareNetwork;
         const shareUrl = buildShareUrl(network);
         if (shareUrl) link.setAttribute("href", shareUrl);
-
         link.addEventListener("click", function (e) {
-          // Instagram has no web share URL — fall back to native share or copy link
-          if (network === "instagram") {
-            e.preventDefault();
-            if (navigator.share) {
-              navigator.share({ title: pageTitle, url: pageUrl }).catch(() => {});
-            } else if (navigator.clipboard) {
-              navigator.clipboard.writeText(pageUrl).then(() => {
-                alert("Link copied to clipboard");
-              });
-            }
-            return;
-          }
-
           if (!shareUrl) return;
           e.preventDefault();
-          window.open(shareUrl, "_blank", "noopener,noreferrer,width=600,height=600");
+          if (network === "instagram") {
+            if (navigator.clipboard) {
+              navigator.clipboard.writeText(pageUrl).then(() => {
+                const notification = document.getElementById('copy-notification');
+                if (notification) {
+                  notification.classList.remove('opacity-0', 'pointer-events-none');
+                  notification.classList.add('opacity-100');
+                  setTimeout(() => {
+                    notification.classList.add('opacity-0', 'pointer-events-none');
+                    notification.classList.remove('opacity-100');
+                  }, 3000);
+                }
+                window.open(shareUrl, "_blank", "noopener,noreferrer");
+              }).catch(() => {
+                prompt("Copy this link to share:", pageUrl);
+                window.open(shareUrl, "_blank", "noopener,noreferrer");
+              });
+            } else {
+              prompt("Copy this link to share:", pageUrl);
+              window.open(shareUrl, "_blank", "noopener,noreferrer");
+            }
+          } else {
+            window.open(shareUrl, "_blank", "noopener,noreferrer,width=600,height=600");
+          }
         });
       });
     })();
