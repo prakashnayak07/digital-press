@@ -193,10 +193,10 @@ document.querySelector("footer").innerHTML = `
 
       <!-- Legal links -->
       <nav class="flex items-center order-2 lg:order-2" aria-label="Legal">
-        <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Terms</span><span aria-hidden="true">Terms</span></span></a>
-        <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Privacy</span><span aria-hidden="true">Privacy</span></span></a>
-        <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Cookies</span><span aria-hidden="true">Cookies</span></span></a>
-        <a href="#" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Sitemap</span><span aria-hidden="true">Sitemap</span></span></a>
+        <a href="terms.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Terms</span><span aria-hidden="true">Terms</span></span></a>
+        <a href="privacy.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Privacy</span><span aria-hidden="true">Privacy</span></span></a>
+        <a href="cookies.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Cookies</span><span aria-hidden="true">Cookies</span></span></a>
+        <a href="sitemap.html" class="footer-roll text-[18px] text-[#1e293b] leading-[25.56px]"><span class="roll-wrap"><span>Sitemap</span><span aria-hidden="true">Sitemap</span></span></a>
       </nav>
 
       <!-- Language selector -->
